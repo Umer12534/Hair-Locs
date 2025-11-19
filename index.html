@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <script src="assets/js/slider.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
+    <div class="sticky">
     <!-- sale banner -->
     <div class="sale-banner">
         <p>We are running a sale</p>
@@ -53,23 +55,55 @@
              </div>
         </div>
     </nav>
+    </div>
+    
     <!-- hero section (swiper) -->
-    <div class="hero-section">
-        <div class="hero-text">
-            <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
-            <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
-            <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
-        </div>
-        <div class="hero-img">
-            <img src="assets/images/hero1.jpg" alt="hero imag">
+     <div class="slider-container">
+        <div class="slides">
+            <div class="hero-section slide">
+                <div class="hero-text">
+                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
+                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
+                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero1.jpg" alt="hero imag">
+                </div>
+            </div>
+            <!-- <div class="hero-section slide">
+                <div class="hero-text">
+                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
+                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
+                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero1.jpg" alt="hero imag">
+                </div>
+            </div>
+            <div class="hero-section slide">
+                <div class="hero-text">
+                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
+                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
+                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero1.jpg" alt="hero imag">
+                </div>
+            </div> -->
         </div>
         
+
+        <div class="pagination">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+        </div>
     </div>
 
 
-     <!-- new arival bar -->
-      <div class="new-arival-bar">
-        <div class="scrolling-text">
+     <!-- new arival bar -->    
+      <marquee behavior="scrolling-text" direction="Left" scrollamount="15" class="scrolling-text-marquee">
+        <div class="scrolling-text-marquee">
             <h3>new arrivals</h3>
             <h3>new arrivals</h3>
             <h3>new arrivals</h3>
@@ -77,6 +111,316 @@
             <h3>new arrivals</h3>
             <h3>new arrivals</h3>
         </div>
-    </div>
+      </marquee>
+      
+    <!-- new Categories section -->
+     <div class="new-categories">
+        <h2>New Categories</h2>
+        <!-- Swiper -->
+        <div class="categories-container">
+            <div class="swiper mySwiper swiper-class">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 1.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open">2</i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 3.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 4.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 1.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 3.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/CATEGORY 4.png" alt="">
+                    <div class="category-show">
+                        <h4>CATEGORY 1</h4>
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+
+        </div>
+        <button class="categorie-btn">EXPLORE ALL CATEGORIES</button>
+     </div>
+
+    <!-- featured products section -->
+     <div class="product-container">
+        <div class="body-fit">
+            <div class="products">
+                <div class="title-section">
+                    <h2>Featured Products</h2>
+                </div>
+
+                <div class="product-grid">
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (1).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (3).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (3).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (4).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (1).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (3).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (3).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (4).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+    <div class="space" style="height: 100vh;"></div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,     
+        spaceBetween: 20,     
+        loop: true,
+
+        navigation:{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 4
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
