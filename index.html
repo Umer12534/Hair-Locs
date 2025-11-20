@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Locs</title>
+    <!-- tab logo -->
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <!-- Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    
+    <!-- Swiper CSS (single version) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <script src="assets/js/slider.js"></script>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -57,52 +57,47 @@
     </nav>
     </div>
     
-    <!-- hero section (swiper) -->
-     
-     <div class="slider-container">
-        <div class="slides">
-            <div class="hero-section slide">
-                <div class="hero-text">
-                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
-                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
-                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
-                </div>
-                <div class="hero-img">
-                    <img src="assets/images/hero1.jpg" alt="hero imag">
-                </div>
-            </div>
-            <!-- <div class="hero-section slide">
-                <div class="hero-text">
-                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
-                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
-                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
-                </div>
-                <div class="hero-img">
-                    <img src="assets/images/hero1.jpg" alt="hero imag">
+    <!-- hero section swiper -->
+     <div class="swiper heroSwiper1">
+        <div class="swiper-wrapper">
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h2>Mastering the Art of Locs and Natural Hair Care</h2>
+                        <p>
+                            Whether you're just beginning your loc journey or seeking advanced techniques,
+                            our expert guides and premium products will support your natural beauty.
+                        </p>
+                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/images/hero1.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="hero-section slide">
-                <div class="hero-text">
-                    <h2>Mastering the Art of Locs and Natural Hair Care</h2><br>
-                    <p>Whether you're just beginning your loc journey or you're years deep into it, we provide expert care tailored to every texture and every stage. From starter locs to mature styles, our approach is rooted in precision, patience, and a deep respect for natural hair.</p>
-                    <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+            <!-- slider 2 -->
+            <div class="swiper-slide">
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h2>Mastering the Art of Locs and Natural Hair Care</h2>
+                        <p>
+                            Whether you're just beginning your loc journey or seeking advanced techniques,
+                            our expert guides and premium products will support your natural beauty.
+                        </p>
+                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/images/hero1.jpg" alt="">
+                    </div>
                 </div>
-                <div class="hero-img">
-                    <img src="assets/images/hero1.jpg" alt="hero imag">
-                </div>
-            </div> -->
+            </div>
         </div>
-        
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+     </div>
 
-        <div class="pagination">
-            <div class="dot active" data-slide="0"></div>
-            <div class="dot" data-slide="1"></div>
-            <div class="dot" data-slide="2"></div>
-        </div>
-    </div>
-
-
-     <!-- new arival bar -->    
+     <!-- new arival bar -->     
       <marquee behavior="scrolling-text" direction="Left" scrollamount="15" class="scrolling-text-marquee">
         <div class="scrolling-text-marquee">
             <h3>new arrivals</h3>
@@ -113,82 +108,115 @@
             <h3>new arrivals</h3>
         </div>
       </marquee>
-      
-    <!-- new Categories section -->
-     <div class="new-categories">
-        <h2>New Categories</h2>
-        <!-- Swiper -->
-        <div class="categories-container">
-            <div class="swiper mySwiper swiper-class">
 
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 1.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open">2</i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 3.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 4.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 1.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 3.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/CATEGORY 4.png" alt="">
-                    <div class="category-show">
-                        <h4>CATEGORY 1</h4>
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            
-
+    <!-- New Categories Section -->
+     <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/images/CATEGORY 1.png"/></div>
+          <div class="swiper-slide"><img src="/assets/images/CATEGORY 2 (1).png"/></div>
+          <div class="swiper-slide"><img src="/assets/images/CATEGORY 3.png"/></div>
+          <div class="swiper-slide"><img src="/assets/images/CATEGORY 4.png"/></div>
+          <div class="swiper-slide"><img src="/assets/images/CATEGORY 4.png"/></div>
         </div>
-        <button class="categorie-btn">EXPLORE ALL CATEGORIES</button>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div> -->
+  
+    <div class="new-categories">
+        <h2>New Categories</h2>
+
+        <div class="categories-container">
+            <div class="categories-wraper">
+                <!-- Category Slide 1 -->
+                <div class="category-card">
+                    <img src="assets/images/CATEGORY 1.png" alt="">
+                    <div class="category-show">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
+                        
+                    </div>
+                </div>
+                <!-- Category Slide 2 -->
+                <div class="category-card">
+                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
+                    <div class="category-show">
+                        <p>CATEGORY 2</p>
+                        <i class="fa-solid fa-box-open"> 6</i>
+                    </div>
+                </div>
+                <!-- Category Slide 3 -->
+                <div class="category-card">
+                    <img src="assets/images/CATEGORY 3.png" alt="">
+                    <div class="category-show">
+                        <p>CATEGORY 3</p>
+                        <i class="fa-solid fa-box-open"> 4</i>
+                    </div>
+                </div>
+                <!-- Category Slide 4 -->
+                <div class="category-card">
+                    <img src="assets/images/CATEGORY 3.png" alt="">
+                    <div class="category-show">
+                        <p>CATEGORY 4</p>
+                        <i class="fa-solid fa-box-open"> 5</i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="category-btn-div">
+            <button class="">EXPLORE ALL CATEGORIES</button>
+        </div>
+    </div>
+
+    <!-- 2nd hero section swiper -->
+     <div class="swiper heroSwiper2">
+        <div class="swiper-wrapper">
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+                <div class="hero-section">
+                    <div class="hero-img">
+                        <img src="assets/images/product (1).png" alt="">
+                    </div>
+                    <div class="hero-text">
+                        <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
+                        <p>
+                            “Naturally You. Beautifully Loc’d.”
+                        </p>
+                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            <!-- slider 2 -->
+            <div class="swiper-slide">
+                <div class="hero-section">
+                    <div class="hero-img">
+                        <img src="assets/images/product (1).png" alt="">
+                    </div>
+                    <div class="hero-text">
+                        <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
+                        <p>
+                            “Naturally You. Beautifully Loc’d.”
+                        </p>
+                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
      </div>
+
 
     <!-- featured products section -->
      <div class="product-container">
@@ -375,52 +403,120 @@
                             </div>
                         </div>
                     </div>
-                
-                
                 </div>
-
-
+                
+                <div class="product-btn-div">
+                    <button>EXPLORE ALL PRODUCTS</button>
+                </div>
             </div>
+
         </div>
      </div>
-    <div class="space" style="height: 100vh;"></div>
-    
 
+     <div class="baner">
+        <img src="/assets/images/natural-oil-baner.png" alt="">
+     </div>
+    <!-- new arival bar -->     
+      <marquee behavior="scrolling-text" direction="Left" scrollamount="15" class="scrolling-text-marquee">
+        <div class="scrolling-text-marquee">
+            <h3>new arrivals</h3>
+            <h3>new arrivals</h3>
+            <h3>new arrivals</h3>
+            <h3>new arrivals</h3>
+            <h3>new arrivals</h3>
+            <h3>new arrivals</h3>
+        </div>
+      </marquee>
+    
+    <div class="footer-container">
+        <div class="body-fit">
+            <div class="footer-top">
+                <div class="footer-card">
+                    <a href="#">
+                        <img src="/assets/images/Logo.png" alt="Logo" class="footer-logo">
+                    </a>
+                </div>
+                <div class="footer-card">
+                    
+                    <ul>
+                        <li><h3>Pages</h3></li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Products</li>
+                        <li>Categories</li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    
+                    <ul>
+                        <li><h3>Help</h3></li>
+                        <li>F.A.Qs</li>
+                        <li>Privacy Policy</li>
+                        <li>Shipping Policy</li>
+                        <li>Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    
+                    <ul>
+                        <li><h3>Contact US</h3></li>
+                        <li>Gujrat, punjab, pakistan</li>
+                        <li><p>Phone: </p>0333-3333333</li>
+                        <li><p>Email: </p>hairlocs@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="subscribe-section">
+                    <input type="text" placeholder="Email">
+                    <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icons-btn-f"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+            </div>
+            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by HASSAN</div>
+        </div>
+    </div>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,     
-        spaceBetween: 20,     
+    // hero section Swiper
+    const heroSwiper1 = new Swiper(".heroSwiper1", {
         loop: true,
-
-        navigation:{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+            el: ".heroSwiper .swiper-pagination",
+            clickable: true, // this makes the dots clickable
         },
-
-        // Responsive breakpoints
-        breakpoints: {
-            0: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3
-            },
-            1024: {
-                slidesPerView: 4
-            }
-        }
     });
+    
+    const heroSwiper2 = new Swiper(".heroSwiper2", {
+        loop: true,
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".heroSwiper .swiper-pagination",
+            clickable: true, // this makes the dots clickable
+        },
+    });
+
 </script>
 
 </body>

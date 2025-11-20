@@ -101,44 +101,69 @@ nav{
 }
 
 
+/* hero section swiper */
+.heroSwiper1{
+    width: 100%;
+    height: 520px;
+    margin-top: 80px;
+}
+
+.heroSwiper1 .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #FEF3EA;
+    height: 520px;
+}
 
 .hero-section{
-    margin-top: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 150px;
-    background-color: #FEF3EA;
-    height: 85vh;
-}
-.hero-text{
-    width: 700px;
-}
-.hero-text h2{
-    font-size: 50px;
-    font-weight: 500;
-}
-.hero-text p{
-    font-size: 20px;
-    padding-top: 20px;
+    width: 100%;
 }
 
-.hero-btn{
-    margin-top: 60px;
-    padding: 20px 25px;
+.heroSwiper1 .hero-text{
+    width: 50%;
+    text-align: left;
+
+}
+
+.heroSwiper1 .hero-text h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.heroSwiper1 .hero-text p{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.heroSwiper1 .hero-btn{
+    padding: 15px 24px;
+    margin-top: 40px;
     background-color: #FAC6AE;
     color: black;
-    border: 0;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
+    font-size: 16px;
     text-transform: uppercase;
-    font-weight: 600;
 }
-.hero-btn:hover{
+.hero-btn:hover,
+.category-btn-div button:hover,
+.heroSwiper2 .hero-btn:hover,
+.heroSwiper2 .hero-btn:hover,
+.product-container .body-fit .product-btn-div button:hover,
+.subscribe-section a:hover,
+.social-icons a:hover{
     background-color: #f2a68c;
     color: white;
 }
-.hero-img {
+.heroSwiper1 .hero-img {
     position: relative;
     width: 300px;
     height: 380px;
@@ -146,13 +171,12 @@ nav{
     z-index: 1;
 }
 
-.hero-img img {
+.heroSwiper1 .hero-img img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
 }
-.hero-img::before {
+.heroSwiper1 .hero-img::before {
     content: "";
     position: absolute;
     top: 20px;
@@ -162,26 +186,18 @@ nav{
     border: 8px solid #f6c7b6;
     z-index: -1;
 }
-.pagination{
+
+
+.heroSwiper1 .swiper-pagination {
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    display : flex;
+    display: flex;
     gap: 10px;
-    z-index: 10;
+    z-index: 100;
 }
-.dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    background-color: rgb(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: width 0.3s ease, background-color 0.3s ease;
-}
-.dot.active{
-    width: 40px;
-}
+
 
 .scrolling-text-marquee{
     width: 100%;
@@ -205,62 +221,113 @@ nav{
 }
 
 
-.new-categories {
-    padding: 25px 25px;
-    
-}
 
-.categories-container {
-    width: 100%;
-    padding: 40px 0px;
-    position: relative;
+.new-categories{
+    padding: 20px 30px;
 }
-
-.swiper-class {
-    width: 100%;
-    padding: 0 20px 0 20px;
+.new-categories h2{
+    margin-bottom: 20px;
 }
-
-.swiper-slide{
-    height: 100px;
+.categories-wraper{
+    display: flex;
+    gap: 20px;
 }
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
+.category-card{
+    border: none;
+    overflow: hidden;
     object-fit: cover;
-    display: block;
 }
 .category-show{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    font-size: smaller;
-    font-weight:50;
+    font-size:smaller;
+    padding: 5px 3px;
 }
-.swiper-pagination{
-    margin-top: 25px;
-    position: relative;   
+.category-show p{
+    text-transform: uppercase;
 }
-.swiper-button-prev, .swiper-button-next {
-    color: black;
-    font-weight: bold;
+.category-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-.categorie-btn{
-    margin: 0 auto;
-    display: block;
-    padding: 15px 20px;
-    background-color: #FAC6AE;
+.category-btn-div button,
+.product-container .body-fit .product-btn-div button{
+    padding: 15px 25px;
     border: none;
+    background-color: #FAC6AE;
 }
-.categorie-btn:hover{
-    background-color: #f2a68c;
-    color: white;
+
+
+/* hero 2nd section swiper */
+.heroSwiper2{
+    width: 100%;
+    height: 500px;
+    background-image: url('/assets/images/hero2-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heroSwiper2 .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    
+    height: 520px;
+}
+
+.heroSwiper2 .hero-img {
+    width: 300px;
+    width: 50%;
+    display: inline-block;
+    z-index: 1;
+    padding: 20px;
+}
+
+.heroSwiper2 .hero-img img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroSwiper2 .hero-text{
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.heroSwiper2 .hero-text h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.heroSwiper2 .hero-text p{
+    font-size: 20px;
+    padding-top: 1px;
+}
+
+.heroSwiper2 .hero-btn{
+    padding: 15px 24px;
+    margin-top: 40px;
+    background-color: #FAC6AE;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .product-container{
     height: auto;
-    padding: 40px 0;
+    padding: 30px 0 0 0;
     width: 100%;
 }
 .body-fit{
@@ -268,7 +335,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /* max-width: 1700px; */
+    
 }
 .products .title-sectuion h2{
     margin-bottom: 25px;
@@ -355,4 +422,116 @@ nav{
     font-size: 17px;
     font-weight: 600;
     color: red;
+}
+.product-container .body-fit .product-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+}
+
+.baner{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.baner img{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    object-position: center;
+}
+.footer-container{
+    width: 100%;
+    height: auto;
+    background-color: #FEF3EA;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.footer-card{
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    object-fit: fill;
+}
+.footer-logo{
+    height: 150px;
+    width: auto;
+}
+.footer-card ul li{
+    list-style: none;
+    padding: 5px;
+}
+.footer-card ul h3{
+    padding-bottom: 20px;
+}
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.footer-bottom .subscribe-section{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+}
+.subscribe-section input{
+    height: 100%;
+    width: 80%;
+    border: 2px solid white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    font-size: large;
+}
+.subscribe-section a{
+    font-size: x-large;
+    color: black;
+    text-decoration: none;    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    width: 20%;
+    background-color: #FAC6AE;
+    transition: all 0.3s ease;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+.social-icons a{
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f6c7b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.footer-copyright{
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
 }
