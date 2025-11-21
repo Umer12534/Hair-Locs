@@ -8,9 +8,8 @@
     <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- custom css -->
+    <!-- index page css -->
     <link rel="stylesheet" href="assets/css/index.css">
-    
     <!-- Swiper CSS (single version) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
@@ -18,45 +17,44 @@
 </head>
 <body>
     <div class="sticky">
-    <!-- sale banner -->
-    <div class="sale-banner">
-        <p>We are running a sale</p>
-    </div>
-    <!-- navegation barr -->
-    <nav>
-        <div class="nav-container">
-            <!-- Left Tabs -->
-            <ul class="nav-tabs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Sale</a></li>
-            </ul>
-
-            <!-- centered Logo -->
-             <div class="logo-container">
-                 <a href="#">
-                    <img src="assets/images/Logo.png" alt="logo" class="logo">
-                 </a>
-             </div>
-
-             <!-- Right Icons -->
-             <div class="nav-icons">
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-             </div>
+        <!-- sale banner -->
+        <div class="sale-banner">
+            <p>We are running a sale</p>
         </div>
-    </nav>
+        <!-- navegation barr -->
+        <nav>
+            <div class="nav-container">
+                <!-- Left Tabs -->
+                <ul class="nav-tabs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            
+                <!-- centered Logo -->
+                 <div class="logo-container">
+                     <a href="#">
+                        <img src="assets/images/Logo.png" alt="logo" class="logo">
+                     </a>
+                 </div>
+             
+                 <!-- Right Icons -->
+                 <div class="nav-icons">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                 </div>
+            </div>
+        </nav>
     </div>
-    
     <!-- hero section swiper -->
      <div class="swiper heroSwiper1">
         <div class="swiper-wrapper">
@@ -98,124 +96,144 @@
      </div>
 
      <!-- new arival bar -->     
-      <marquee behavior="scrolling-text" direction="Left" scrollamount="15" class="scrolling-text-marquee">
-        <div class="scrolling-text-marquee">
-            <h3>new arrivals</h3>
-            <h3>new arrivals</h3>
-            <h3>new arrivals</h3>
-            <h3>new arrivals</h3>
-            <h3>new arrivals</h3>
-            <h3>new arrivals</h3>
-        </div>
-      </marquee>
+    <marquee behavior="scrolling-text" direction="Left" scrollamount="15" class="scrolling-text-marquee">
+      <div class="scrolling-text-marquee">
+          <h3>new arrivals</h3>
+          <h3>new arrivals</h3>
+          <h3>new arrivals</h3>
+          <h3>new arrivals</h3>
+          <h3>new arrivals</h3>
+          <h3>new arrivals</h3>
+      </div>
+    </marquee>
 
     <!-- New Categories Section -->
-     <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="/assets/images/CATEGORY 1.png"/></div>
-          <div class="swiper-slide"><img src="/assets/images/CATEGORY 2 (1).png"/></div>
-          <div class="swiper-slide"><img src="/assets/images/CATEGORY 3.png"/></div>
-          <div class="swiper-slide"><img src="/assets/images/CATEGORY 4.png"/></div>
-          <div class="swiper-slide"><img src="/assets/images/CATEGORY 4.png"/></div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div> -->
-  
     <div class="new-categories">
         <h2>New Categories</h2>
-
         <div class="categories-container">
-            <div class="categories-wraper">
-                <!-- Category Slide 1 -->
-                <div class="category-card">
-                    <img src="assets/images/CATEGORY 1.png" alt="">
-                    <div class="category-show">
+            <div class="swiper custom-swiper">
+              <div class="swiper-wrapper custom-wrapper">
+                <!-- card 1 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 1.png" />
+                    </div>
+                    <div class="slide-text">
                         <p>CATEGORY 1</p>
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
-                        
                     </div>
                 </div>
-                <!-- Category Slide 2 -->
-                <div class="category-card">
-                    <img src="assets/images/CATEGORY 2 (1).png" alt="">
-                    <div class="category-show">
-                        <p>CATEGORY 2</p>
-                        <i class="fa-solid fa-box-open"> 6</i>
+                <!-- card 2 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 2 (1).png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
-                <!-- Category Slide 3 -->
-                <div class="category-card">
-                    <img src="assets/images/CATEGORY 3.png" alt="">
-                    <div class="category-show">
-                        <p>CATEGORY 3</p>
-                        <i class="fa-solid fa-box-open"> 4</i>
+                <!-- card 3 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 3.png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
-                <!-- Category Slide 4 -->
-                <div class="category-card">
-                    <img src="assets/images/CATEGORY 3.png" alt="">
-                    <div class="category-show">
-                        <p>CATEGORY 4</p>
-                        <i class="fa-solid fa-box-open"> 5</i>
+                <!-- card 4 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 4.png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
-                
+                <!-- card 5 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 1.png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 2 (1).png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
+                    </div>
+                </div>
+                <!-- card 7 -->
+                <div class="swiper-slide custom-slide">
+                    <div class="card-img">
+                        <img src="/assets/images/CATEGORY 3.png" />
+                    </div>
+                    <div class="slide-text">
+                        <p>CATEGORY 1</p>
+                        <p><i class="fa-solid fa-box-open"> 5</i></p>
+                    </div>
+                </div>
+              </div>
+              <div class="next-pre-btn">
+                  <div class="swiper-button-prev custom-button-prev"></div>
+                  <div class="swiper-button-next custom-button-next"></div>
+              </div>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="category-btn-div">
+            <div class="category-btn-div">
             <button class="">EXPLORE ALL CATEGORIES</button>
+        </div>
         </div>
     </div>
 
+
     <!-- 2nd hero section swiper -->
-     <div class="swiper heroSwiper2">
-        <div class="swiper-wrapper">
-            <!-- slider 1 -->
-            <div class="swiper-slide">
-                <div class="hero-section">
-                    <div class="hero-img">
-                        <img src="assets/images/product (1).png" alt="">
-                    </div>
-                    <div class="hero-text">
-                        <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                        <p>
-                            “Naturally You. Beautifully Loc’d.”
-                        </p>
-                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
-                    </div>
-                </div>
-            </div>
-            <!-- slider 2 -->
-            <div class="swiper-slide">
-                <div class="hero-section">
-                    <div class="hero-img">
-                        <img src="assets/images/product (1).png" alt="">
-                    </div>
-                    <div class="hero-text">
-                        <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                        <p>
-                            “Naturally You. Beautifully Loc’d.”
-                        </p>
-                        <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-     </div>
+    <div class="swiper heroSwiper2">
+       <div class="swiper-wrapper">
+           <!-- slider 1 -->
+           <div class="swiper-slide">
+               <div class="hero-section">
+                   <div class="hero-img">
+                       <img src="assets/images/product (1).png" alt="">
+                   </div>
+                   <div class="hero-text">
+                       <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
+                       <p>
+                           “Naturally You. Beautifully Loc’d.”
+                       </p>
+                       <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                   </div>
+               </div>
+           </div>
+           <!-- slider 2 -->
+           <div class="swiper-slide">
+               <div class="hero-section">
+                   <div class="hero-img">
+                       <img src="assets/images/product (1).png" alt="">
+                   </div>
+                   <div class="hero-text">
+                       <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
+                       <p>
+                           “Naturally You. Beautifully Loc’d.”
+                       </p>
+                       <button class="hero-btn">EXPLORE ALL PRODUCTS</button>
+                   </div>
+               </div>
+           </div>
+           
+       </div>
+       <!-- pagination -->
+       <div class="swiper-pagination"></div>
+    </div>
 
 
     <!-- featured products section -->
@@ -250,7 +268,29 @@
                         </div>
                     </div>
     
-                    <div class="product-card">
+                     <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/images/product (2).png" alt="" class="card-image">
+                            <div class="product-img-top">
+                                <div class="like">
+                                    <p>20</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                            </div>
+                        </div>
+                        <div class="product-text-holder">
+                            <div class="product-name">
+                                <p> Product Name</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="text-stike">PKR: 4000</p>
+                                <p class="product-price-text">PKR: 2900</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                     <div class="product-card">
                         <div class="product-img">
                             <img src="assets/images/product (3).png" alt="" class="card-image">
                             <div class="product-img-top">
@@ -272,29 +312,7 @@
                         </div>
                     </div>
     
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="assets/images/product (3).png" alt="" class="card-image">
-                            <div class="product-img-top">
-                                <div class="like">
-                                    <p>20</p>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
-                            </div>
-                        </div>
-                        <div class="product-text-holder">
-                            <div class="product-name">
-                                <p> Product Name</p>
-                            </div>
-                            <div class="product-price">
-                                <p class="text-stike">PKR: 4000</p>
-                                <p class="product-price-text">PKR: 2900</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="product-card">
+                     <div class="product-card">
                         <div class="product-img">
                             <img src="assets/images/product (4).png" alt="" class="card-image">
                             <div class="product-img-top">
@@ -316,7 +334,7 @@
                         </div>
                     </div>
                 
-                    <div class="product-card">
+                     <div class="product-card">
                         <div class="product-img">
                             <img src="assets/images/product (1).png" alt="" class="card-image">
                             <div class="product-img-top">
@@ -517,6 +535,35 @@
         },
     });
 
+
+    var swiper = new Swiper(".custom-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".custom-pagination",
+        clickable: true,
+      },
+      navigation: {
+      nextEl: ".custom-button-next",
+      prevEl: ".custom-button-prev",
+        },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+    
+    
 </script>
 
 </body>
