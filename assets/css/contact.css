@@ -99,24 +99,27 @@ nav{
     margin: 0 auto;
     padding: 0 45px;
 }
-.contact-hero{
+
+ /* Categories Hero Section */
+.contact-hero {
     background-color: #FEF3EA;
-    padding: 80px 0 60px;
-    margin-top: 215px;
+    padding: 100px 0 60px;
+    margin-top: 210px;
     text-align: center;
 }
-.contact-hero h1{
+
+.contact-hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
     color: #333;
 }
-.contact-hero p{
+
+.contact-hero p {
     font-size: 20px;
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
     color: #666;
 }
-
 /* Contact Content */
 .contact-content {
     padding: 80px 0;
@@ -192,8 +195,14 @@ textarea.form-control {
     padding: 40px;
     border-radius: 8px;
     height: fit-content;
+    animation: floatingcard 3s ease-in-out 0s infinite;
+
 }
 
+@keyframes floatingcard{
+    0%, 100% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+}
 .contact-info h2 {
     font-size: 32px;
     margin-bottom: 30px;
@@ -202,10 +211,20 @@ textarea.form-control {
 
 .info-item {
     display: flex;
-    align-items: flex-start;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
     margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 5px 5px 5px 20px;
+    transition: all 0.3s ease;
+
 }
 
+.info-item:hover{
+    background: rgba(245, 171, 136, 0.283);
+    transform: translateX(10px);
+}
 .info-icon {
     background-color: #FAC6AE;
     width: 50px;
@@ -225,7 +244,7 @@ textarea.form-control {
 
 .info-text h3 {
     font-size: 20px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     color: #333;
 }
 
@@ -410,3 +429,61 @@ textarea.form-control {
     }
 
 }
+
+
+.whatsapp-ione{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+
+}
+.whatsapp-tooltip{
+    position: absolute;
+    right: 70px;
+    bottom: 15px;
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.whatsapp-ione:hover{
+    background-color: #128C7E;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+.whatsapp-ione:hover .whatsapp-tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+ @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+ }

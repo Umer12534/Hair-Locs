@@ -181,15 +181,9 @@ nav{
     z-index: -1;
 }
 
-
-.heroSwiper1 .swiper-pagination {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 100;
+.swiper-pagination-bullet-active{
+    width: 35px !important;
+    border-radius: 10px !important;
 }
 
 
@@ -283,11 +277,25 @@ nav{
     text-align: center;
     padding: 10px;
 } 
+
 .custom-button-prev,
 .custom-button-next {
-    background: #f6c5ac; 
-    color: black !important;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6c5ac88; 
+    color: rgb(67, 62, 62) !important;
+
     
+}
+
+.custom-button-prev svg{
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -311,7 +319,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
-    
     height: 520px;
 }
 
@@ -409,7 +416,9 @@ nav{
 .product-card .card-image img{
     transition: all 0.3s ease;
 }
-
+.product-img{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
 .product-img-top{
     position: absolute;
     display: flex;
@@ -476,9 +485,9 @@ nav{
     padding: 20px 20px 0 20px;
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+.product-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
 }
 .product-card:hover .product-img img{
     transform: scale(1.05);
@@ -594,3 +603,60 @@ nav{
     background-color: #f2a68c;
     color: white;
 }
+
+.whatsapp-ione{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+
+}
+.whatsapp-tooltip{
+    position: absolute;
+    right: 70px;
+    bottom: 15px;
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.whatsapp-ione:hover{
+    background-color: #128C7E;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+.whatsapp-ione:hover .whatsapp-tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+ @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+ }
