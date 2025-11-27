@@ -39,20 +39,23 @@
     font-size: 20px;
     padding-top: 20px;
     line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .heroSwiper1 .hero-btn{
+    display: inline-block;
     padding: 15px 24px;
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: #FAC6AE;
     color: black;
     border: none;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .hero-btn:hover,
-.category-btn-div button:hover,
+.category-btn-div a:hover,
 .heroSwiper2 .hero-btn:hover,
 .heroSwiper2 .hero-btn:hover,
 .product-container .body-fit .product-btn-div button:hover{
@@ -86,6 +89,7 @@
 .swiper-pagination-bullet-active{
     width: 35px !important;
     border-radius: 10px !important;
+    background-color: #f2a68c !important;
 }
 
 
@@ -164,11 +168,13 @@
     transform: scale(1.01);
 }
 
-.category-btn-div button,
+.category-btn-div a,
 .product-container .body-fit .product-btn-div button{
     padding: 15px 25px;
     border: none;
     background-color: #FAC6AE;
+    text-decoration: none;
+    color: black;
 }
 
 .categories-container .category-btn-div{
@@ -257,6 +263,7 @@
 }
 
 .heroSwiper2 .hero-btn{
+    display: inline-block;
     padding: 15px 24px;
     margin-top: 40px;
     background-color: #FAC6AE;
@@ -265,6 +272,7 @@
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .product-container{

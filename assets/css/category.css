@@ -26,13 +26,14 @@
 }
 
 .filter-search {
-    flex: 1;
+    flex: 1 1 350px;
     min-width: 300px;
 }
 
 .search-box {
     position: relative;
-    max-width: 400px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .search-box input {
@@ -46,22 +47,22 @@
 
 .search-box i {
     position: absolute;
-    right: 20px;
+    right: 18px;
     top: 50%;
     transform: translateY(-50%);
     color: #666;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .filter-tags {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .filter-tag {
     padding: 10px 20px;
-    background-color: white;
+    background-color: #fff;
     border: 2px solid #FAC6AE;
     border-radius: 25px;
     cursor: pointer;
@@ -73,6 +74,7 @@
     background-color: #FAC6AE;
     color: black;
 }
+
 
 /* All Categories with Swiper */
 .all-categories{
@@ -350,4 +352,29 @@
     .filter-search {
         min-width: 100%;
     }
+}
+
+
+
+/* for flying image */
+.fly-image {
+    position: absolute;
+    z-index: 9999;
+    width: 150px;
+    height: auto;
+    pointer-events: none;
+    transition: all 0.8s ease-in-out;
+    border-radius: 8px;
+    will-change: transform, width, top, left, opacity;
+}
+
+/* small visual bounce for cart when item lands */
+.cart-bounce {
+    animation: cart-bounce 0.45s ease;
+}
+@keyframes cart-bounce {
+    0%   { transform: translateY(0) scale(1); }
+    30%  { transform: translateY(-6px) scale(1.05); }
+    60%  { transform: translateY(0) scale(.98); }
+    100% { transform: translateY(0) scale(1); }
 }

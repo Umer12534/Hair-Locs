@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQs</title>
     <!-- tab logo -->
     <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <!-- style.css -->
      <link rel="stylesheet" href="/assets/css/style.css">
+     <!-- FAQs CSS -->
+      <link rel="stylesheet" href="/assets/css/faqs.css">
 </head>
 <body>
     <!-- header -->
@@ -18,7 +20,7 @@
         <div class="sale-banner">
             <p>We are running a sale</p>
         </div>
-        <!-- navegation barr -->
+        <!-- navigation bar -->
         <nav>
             <div class="nav-container">
                 <!-- Left Tabs -->
@@ -52,8 +54,162 @@
             </div>
         </nav>
     </div>
-<div class="space" style="height: 100vh;"></div>
-<!-- footer -->
+
+
+    <!-- FAQs Categories -->
+     <section class="faqs-categories-filter">
+        <div class="container">
+            <div class="filter-faqs-container">
+                <div class="filter-search">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search categories...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="faqs-filter-tags">
+                    <div class="faqs-tag active" data-category="all">All Questions</div>
+                    <div class="faqs-tag" data-category="Products">Products</div>
+                    <div class="faqs-tag" data-category="Shipping">Shipping & Delivery</div>
+                    <div class="faqs-tag" data-category="Returns">Returns & Refunds</div>
+                    <div class="faqs-tag" data-category="Hair-Care">Hair Care</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faqs content -->
+    <div class="faqs-content">
+        <div class="faqs-container">
+            <!-- Products Section -->
+            <div class="faqs-section" id="Products">
+                <h2>Products Questions</h2>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+                
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shipping Section -->
+            <div class="faqs-section" id="Shipping">
+                <h2>Shipping Questions</h2>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Returns Section -->
+            <div class="faqs-section" id="Returns">
+                <h2>Returns Questions</h2>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hair Care Section -->
+            <div class="faqs-section" id="Hair-Care">
+                <h2>Hair Care Questions</h2>
+
+                <div class="faqs-item">
+                    <div class="faqs-question">
+                        <h3>Question Lorem ipsum dolor sit amet.</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        <p>answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea delectus laboriosam sequi distinctio repellat expedita voluptas. Voluptatibus, omnis id!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Still Have Questions Section -->
+    <div class="contact-prompt">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find the answer you're looking for? Please reach out to our friendly team.</p>
+                <a href="/Contact.html" class="contact-btn">Contact Us</a>
+            </div>
+            <div class="contant-image">
+                <img src="/assets/images/FAQs-section-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
     <div class="footer-container">
         <div class="body-fit">
             <div class="footer-top">
@@ -66,21 +222,21 @@
                     
                     <ul>
                         <li><h3>Pages</h3></li>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Products</li>
-                        <li>Categories</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/Contact.html">Contact</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="/category.html">Categories</a></li>
                     </ul>
                 </div>
                 <div class="footer-card">
                     
                     <ul>
                         <li><h3>Help</h3></li>
-                        <li>F.A.Qs</li>
-                        <li>Privacy Policy</li>
-                        <li>Shipping Policy</li>
-                        <li>Refund Policy</li>
+                        <li><a href="/faqs.html">F.A.Qs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-card">
@@ -106,8 +262,63 @@
                 </div>
                 
             </div>
-            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by HASSAN</div>
+            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
         </div>
     </div>
+
+
+    <!-- whatsapp icone -->
+    <a href="#" class="whatsapp-ione">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">chat with us</span>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion functionality
+            const faqItems = document.querySelectorAll('.faqs-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faqs-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // FAQ Category Filtering
+            const categoryBtns = document.querySelectorAll('.faqs-tag');
+            const faqSections = document.querySelectorAll('.faqs-section');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Show/hide sections based on category
+                    faqSections.forEach(section => {
+                        if (category === 'all' || section.id === category) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

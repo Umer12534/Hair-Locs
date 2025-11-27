@@ -124,6 +124,13 @@ nav{
     padding-top: 50px;
     object-fit: fill;
 }
+.footer-card a{
+    text-decoration: none;
+    color: #333;
+}
+.footer-card a:hover{
+    color:#f2a68c;
+}
 .footer-logo{
     height: 150px;
     width: auto;

@@ -49,7 +49,7 @@
                         <i class="fa-solid fa-user"></i>
                     </a>
                     <a href="#">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                     </a>
                  </div>
             </div>
@@ -90,7 +90,7 @@
                             <div class="swiper-slide">
                                 <div class="category-card">
                                     <div class="category-image">
-                                        <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                                        <img src="assets/images/hair-oil category.jpg" alt="Hair Oils">
                                         <div class="category-overlay">
                                             <h3>Hair Oils</h3>
                                         </div>
@@ -112,7 +112,7 @@
                             <div class="swiper-slide">
                                 <div class="category-card">
                                     <div class="category-image">
-                                        <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                                        <img src="assets/images/shampo category.jpg" alt="Hair Oils">
                                         <div class="category-overlay">
                                             <h3>Cleansing Shampoo</h3>
                                         </div>
@@ -134,7 +134,7 @@
                             <div class="swiper-slide">
                                 <div class="category-card">
                                     <div class="category-image">
-                                        <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                                        <img src="assets/images/conditioner category 3.png" alt="Hair Oils">
                                         <div class="category-overlay">
                                             <h3>Moisturizing Conditioners</h3>
                                         </div>
@@ -246,7 +246,7 @@
                     <!-- card 1 -->
                     <div class="category-card">
                         <div class="category-image">
-                            <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                            <img src="assets/images/Feature product1.jpg" alt="Hair Oils">
                         </div>
                         <div class="product-info">
                             <h3>Natural Loc Oil</h3>
@@ -263,7 +263,7 @@
                     <!-- card 2 -->
                     <div class="category-card">
                         <div class="category-image">
-                            <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                            <img src="assets/images/Feature product2.jpg" alt="Hair Oils">
                         </div>
                         <div class="product-info">
                             <h3>Natural Loc Oil</h3>
@@ -280,7 +280,7 @@
                     <!-- card 3 -->
                     <div class="category-card">
                         <div class="category-image">
-                            <img src="assets/images/CATEGORY 1.png" alt="Hair Oils">
+                            <img src="assets/images/Feature product3.jpg" alt="Hair Oils">
                         </div>
                         <div class="product-info">
                             <h3>Natural Loc Oil</h3>
@@ -309,25 +309,28 @@
                     </a>
                 </div>
                 <div class="footer-card">
+                    
                     <ul>
                         <li><h3>Pages</h3></li>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Products</li>
-                        <li>Categories</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/Contact.html">Contact</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="/category.html">Categories</a></li>
                     </ul>
                 </div>
                 <div class="footer-card">
+                    
                     <ul>
                         <li><h3>Help</h3></li>
-                        <li>F.A.Qs</li>
-                        <li>Privacy Policy</li>
-                        <li>Shipping Policy</li>
-                        <li>Refund Policy</li>
+                        <li><a href="/faqs.html">F.A.Qs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-card">
+                    
                     <ul>
                         <li><h3>Contact US</h3></li>
                         <li>Gujrat, punjab, pakistan</li>
@@ -347,10 +350,12 @@
                     <a href="#" class="social-icons-btn"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#" class="social-icons-btn"><i class="fa-brands fa-instagram"></i></a>
                 </div>
+                
             </div>
-            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by HASSAN</div>
+            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
         </div>
     </div>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -388,6 +393,94 @@
                 },
             },
         });
+        
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Select all Add to Cart anchors inside .product-btn-div
+  const addButtons = document.querySelectorAll('.product-btn-div a');
+  const cartIcon = document.querySelector('.cart-icon'); // target the <i> element
+  const cartLink = document.querySelector('.cart-link'); // optional wrapper for bounce
+
+  if (!cartIcon) {
+    console.warn('Cart icon (.cart-icon) not found in DOM. Please add class "cart-icon" to the cart icon.');
+    return;
+  }
+
+  function getPageCoords(rect) {
+    // convert viewport rect to document coordinates
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
+
+  addButtons.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const productCard = btn.closest('.category-card');
+      if (!productCard) return;
+
+      const img = productCard.querySelector('img');
+      if (!img) return;
+
+      // Clone the image and style
+      const flyImg = img.cloneNode(true);
+      flyImg.classList.add('fly-image');
+      document.body.appendChild(flyImg);
+
+      // start position (document coords)
+      const imgRect = img.getBoundingClientRect();
+      const start = getPageCoords(imgRect);
+      flyImg.style.left = start.left + 'px';
+      flyImg.style.top = start.top + 'px';
+      flyImg.style.width = imgRect.width + 'px';
+      flyImg.style.opacity = '1';
+
+      // force reflow so transition will run
+      flyImg.getBoundingClientRect();
+
+      // target position (document coords)
+      const cartRect = cartIcon.getBoundingClientRect();
+      const target = getPageCoords(cartRect);
+
+      // animate: shrink and move to center of cart icon
+      const targetX = target.left + (cartRect.width / 2) - 15; // center - half target width (30px/2)
+      const targetY = target.top + (cartRect.height / 2) - 15;
+
+      // apply transform via left/top to keep it simple
+      setTimeout(() => {
+        flyImg.style.left = targetX + 'px';
+        flyImg.style.top = targetY + 'px';
+        flyImg.style.width = '30px';
+        flyImg.style.opacity = '0.2';
+      }, 20);
+
+      // optional: bounce the cart when animation ends
+      flyImg.addEventListener('transitionend', function onEnd() {
+        flyImg.removeEventListener('transitionend', onEnd);
+        // small bounce on cart
+        if (cartLink) {
+          cartLink.classList.add('cart-bounce');
+          setTimeout(() => cartLink.classList.remove('cart-bounce'), 450);
+        } else {
+          cartIcon.classList.add('cart-bounce');
+          setTimeout(() => cartIcon.classList.remove('cart-bounce'), 450);
+        }
+        // remove flying image
+        flyImg.remove();
+      });
+
+      // TODO: here you would also add the item to actual cart state (AJAX/localStorage)
+    });
+  });
+});
+
+
+
+
     </script>
 </body>
 </html>
