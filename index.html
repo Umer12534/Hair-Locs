@@ -52,7 +52,7 @@
                     </a>
                     <a href="#">
                         <i class="fa-solid fa-bag-shopping"></i>
-                        <span class="cart-count">3</span>
+                        <span class="cart-count"></span>
                     </a>
                  </div>
 
@@ -60,7 +60,7 @@
         </nav>
     </div>
 
-    <!-- hero section swiper -->
+    <!-- 1st hero section swiper -->
      <div class="swiper heroSwiper1">
         <div class="swiper-wrapper">
             <!-- slider 1 -->
@@ -144,8 +144,6 @@
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
-            </span>
-            <span>
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
@@ -153,6 +151,14 @@
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
             </span>
+            <!-- <span>
+                <h3>new arrivals</h3>
+                <h3>new arrivals</h3>
+                <h3>new arrivals</h3>
+                <h3>new arrivals</h3>
+                <h3>new arrivals</h3>
+                <h3>new arrivals</h3>
+            </span> -->
         </div>
       </div> 
 
@@ -245,7 +251,6 @@
                 <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
              </div>
     </div>
-
 
     <!-- 2nd hero section swiper -->
     <div class="swiper heroSwiper2">
@@ -513,85 +518,37 @@
         </div>
      </div>
 
-
+     <!-- 3rd swiper -->
      <div class="banner-slider">
-        <div class="banner-logo">
-            <img src="/assets/images/Logo.png" alt="">
-        </div>
-        <div class="banner-swiper-slider">
-            <!-- 2nd hero section swiper -->
-            <div class="swiper heroSwiper2">
+            <div class="swiper mySwiper">
                <div class="swiper-wrapper">
                    <!-- slider 1 -->
-                   <div class="swiper-slide">
-                       <div class="hero-section">
-                           <div class="hero-img">
-                               <img src="assets/images/product (1).png" alt="">
-                           </div>
-                           <div class="hero-text">
-                               <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                               <p>
-                                   “Naturally You. Beautifully Locd.”
-                               </p>
-                               <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
-                           </div>
-                       </div>
+                   <div class="swiper-slide baner">
+                        <img src="/assets/images/natural-oil-baner.png" alt="">
                    </div>
                    <!-- slider 2 -->
                    <div class="swiper-slide">
-                       <div class="hero-section">
-                           <div class="hero-img">
-                               <img src="assets/images/product (1).png" alt="">
-                           </div>
-                           <div class="hero-text">
-                               <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                               <p>
-                                   “Naturally You. Beautifully Loc’d.”
-                               </p>
-                               <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
-                           </div>
-                       </div>
+                       <div class="swiper-slide baner">
+                        <img src="/assets/images/natural-oil-baner.png" alt="">
+                        </div>
                    </div>
                    <!-- slider 3 -->
-                   <div class="swiper-slide">
-                       <div class="hero-section">
-                           <div class="hero-img">
-                               <img src="assets/images/product (1).png" alt="">
-                           </div>
-                           <div class="hero-text">
-                               <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                               <p>
-                                   “Naturally You. Beautifully Loc’d.”
-                               </p>
-                               <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
-                           </div>
-                       </div>
+                    <div class="swiper-slide">
+                       <div class="swiper-slide baner">
+                        <img src="/assets/images/natural-oil-baner.png" alt="">
+                    </div>
                    </div>
                    <!-- slider 4 -->
-                   <div class="swiper-slide">
-                       <div class="hero-section">
-                           <div class="hero-img">
-                               <img src="assets/images/product (1).png" alt="">
-                           </div>
-                           <div class="hero-text">
-                               <h2>Get 15% Off Your First Visit Expert Locs & Natural Hair Care Tailored Just for You!</h2>
-                               <p>
-                                   “Naturally You. Beautifully Loc’d.”
-                               </p>
-                               <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
-                           </div>
-                       </div>
+                    <div class="swiper-slide">
+                       <div class="swiper-slide baner">
+                        <img src="/assets/images/natural-oil-baner.png" alt="">
+                        </div>
                    </div>
 
                </div>
-               <!-- pagination -->
-               <div class="swiper-pagination"></div>
             </div>
-        </div>
      </div>
-     <div class="baner">
-        <img src="/assets/images/natural-oil-baner.png" alt="">
-     </div>
+     
     
        <!-- new arival bar -->    
       <div class="scrolling-bar">
@@ -678,7 +635,7 @@
     </a>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
     // hero section Swiper
@@ -737,14 +694,23 @@
         },
       },
     });
-      document.querySelector(".cat-next").addEventListener("click", () => {
+
+    document.querySelector(".cat-next").addEventListener("click", () => {
       swiper.slideNext();
-  });
+    });
 
   document.querySelector(".cat-prev").addEventListener("click", () => {
       swiper.slidePrev();
-  });
-
+    });
+    var swiper = new Swiper(".mySwiper", {
+         loop: true,
+        slidesPerView: 1,
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
 </script>
 
 </body>
