@@ -28,11 +28,11 @@
             <div class="nav-container">
                 <!-- Left Tabs -->
                 <ul class="nav-tabs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/Contact.html" target="_blank">Contact</a></li>
-                    <li><a href="/category.html" target="_blank">Categories</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="/faqs.html" target="_blank">FAQs</a></li>
+                    <li><a href="/" class="nav-active">Home</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                    <li><a href="/category.html">Categories</a></li>
+                    <li><a href="/sale.html">Sale</a></li>
+                    <li><a href="/faqs.html">FAQs</a></li>
                 </ul>
             
                 <!-- Logo -->
@@ -50,8 +50,8 @@
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
                     </a>
-                    <a href="#">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                    <a href="#" class="cart-link">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                         <span class="cart-count"></span>
                     </a>
                  </div>
@@ -76,6 +76,7 @@
                         <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
                         
                     </div>
+                    
                     <div class="hero-img">
                         <img src="assets/images/hero1.jpg" alt="">
                     </div>
@@ -246,10 +247,11 @@
                 <a href="/category.html">EXPLORE ALL CATEGORIES</a>
             </div>
         </div>
+        <!-- coustom buttont to maove cards -->
          <div class="custom-nav">
                 <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
-             </div>
+         </div>
     </div>
 
     <!-- 2nd hero section swiper -->
@@ -341,7 +343,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -363,7 +367,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -385,7 +391,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                               <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -407,7 +415,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                               <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -429,7 +439,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -451,7 +463,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -473,7 +487,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                               <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -495,7 +511,9 @@
                                     <p>20</p>
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
-                                <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                <a class="cart-link">
+                                    <i class="fa-solid fa-bag-shopping product-bag"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="product-text-holder">
@@ -584,10 +602,10 @@
                     
                     <ul>
                         <li><h3>Pages</h3></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
                         <li><a href="/Contact.html">Contact</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="/">Products</a></li>
                         <li><a href="/category.html">Categories</a></li>
                     </ul>
                 </div>
@@ -633,9 +651,11 @@
         <i class="fa-brands fa-whatsapp"></i>
         <span class="whatsapp-tooltip">chat with us</span>
     </a>
+    <!-- active nav tabs -->
+    <!-- <script src="/assets/js/activ-navtabs.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
     // hero section Swiper
@@ -678,7 +698,10 @@
             delay: 3000,
             disableOnInteraction: false,
         },
-        
+            navigation: {
+            nextEl: ".cat-next",
+            prevEl: ".cat-prev",
+        },
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -695,13 +718,6 @@
       },
     });
 
-    document.querySelector(".cat-next").addEventListener("click", () => {
-      swiper.slideNext();
-    });
-
-  document.querySelector(".cat-prev").addEventListener("click", () => {
-      swiper.slidePrev();
-    });
     var swiper = new Swiper(".mySwiper", {
          loop: true,
         slidesPerView: 1,
@@ -711,6 +727,93 @@
             disableOnInteraction: false,
         },
     });
+
+
+
+
+
+
+
+    // 
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const addButtons = document.querySelectorAll('.product-bag');
+
+  const cartIcon = document.querySelector('.cart-icon');
+  const cartLink = document.querySelector('.cart-link');
+
+  if (!cartIcon) {
+    console.warn('Cart icon (.cart-icon) not found.');
+    return;
+  }
+
+  function getPageCoords(rect) {
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
+
+  addButtons.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const productCard = btn.closest('.product-img');
+      if (!productCard) return;
+
+      const img = productCard.querySelector('img');
+      if (!img) return;
+
+      const flyImg = img.cloneNode(true);
+      flyImg.classList.add('fly-image');
+      document.body.appendChild(flyImg);
+
+      const imgRect = img.getBoundingClientRect();
+      const start = getPageCoords(imgRect);
+
+      flyImg.style.left = start.left + 'px';
+      flyImg.style.top = start.top + 'px';
+      flyImg.style.width = imgRect.width + 'px';
+      flyImg.style.opacity = '1';
+
+      flyImg.getBoundingClientRect();
+
+      const cartRect = cartIcon.getBoundingClientRect();
+      const target = getPageCoords(cartRect);
+
+      const targetX = target.left + cartRect.width / 2 - 15;
+      const targetY = target.top + cartRect.height / 2 - 15;
+
+      setTimeout(() => {
+        flyImg.style.left = targetX + 'px';
+        flyImg.style.top = targetY + 'px';
+        flyImg.style.width = '30px';
+        flyImg.style.opacity = '0.2';
+      }, 20);
+
+   // optional: bounce the cart when animation ends
+      flyImg.addEventListener('transitionend', function onEnd() {
+        flyImg.removeEventListener('transitionend', onEnd);
+
+        if (cartLink) {
+          cartLink.classList.add('cart-bounce');
+          setTimeout(() => cartLink.classList.remove('cart-bounce'), 450);
+        } else {
+          cartIcon.classList.add('cart-bounce');
+          setTimeout(() => cartIcon.classList.remove('cart-bounce'), 450);
+        }
+
+        flyImg.remove();
+      });
+    });
+  });
+});
+
+
+
+
+
 </script>
 
 </body>

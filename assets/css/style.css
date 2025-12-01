@@ -109,6 +109,14 @@ nav{
 }
 
 
+.nav-tabs a.nav-active {
+    color: #f2a68c !important;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
 /* footer */
 .footer-container{
     width: 100%;
