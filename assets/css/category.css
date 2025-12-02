@@ -349,25 +349,3 @@
         min-width: 100%;
     }
 }
-
-
-
-/* for flying image */
-.fly-image {
-  position: absolute;
-  z-index: 9999;
-  pointer-events: none;
-  transition: all 0.8s cubic-bezier(.42,0,.58,1);
-  border-radius: 8px;
-}
-
-/* small visual bounce for cart when item lands */
-.cart-bounce {
-  animation: cartBounce 0.45s ease;
-}
-
-@keyframes cartBounce {
-  0% { transform: scale(1); }
-  40% { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}

@@ -152,14 +152,6 @@
                 <h3>new arrivals</h3>
                 <h3>new arrivals</h3>
             </span>
-            <!-- <span>
-                <h3>new arrivals</h3>
-                <h3>new arrivals</h3>
-                <h3>new arrivals</h3>
-                <h3>new arrivals</h3>
-                <h3>new arrivals</h3>
-                <h3>new arrivals</h3>
-            </span> -->
         </div>
       </div> 
 
@@ -727,93 +719,6 @@
             disableOnInteraction: false,
         },
     });
-
-
-
-
-
-
-
-    // 
-
-document.addEventListener('DOMContentLoaded', function () {
-
-  const addButtons = document.querySelectorAll('.product-bag');
-
-  const cartIcon = document.querySelector('.cart-icon');
-  const cartLink = document.querySelector('.cart-link');
-
-  if (!cartIcon) {
-    console.warn('Cart icon (.cart-icon) not found.');
-    return;
-  }
-
-  function getPageCoords(rect) {
-    return {
-      left: rect.left + window.scrollX,
-      top: rect.top + window.scrollY
-    };
-  }
-
-  addButtons.forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const productCard = btn.closest('.product-img');
-      if (!productCard) return;
-
-      const img = productCard.querySelector('img');
-      if (!img) return;
-
-      const flyImg = img.cloneNode(true);
-      flyImg.classList.add('fly-image');
-      document.body.appendChild(flyImg);
-
-      const imgRect = img.getBoundingClientRect();
-      const start = getPageCoords(imgRect);
-
-      flyImg.style.left = start.left + 'px';
-      flyImg.style.top = start.top + 'px';
-      flyImg.style.width = imgRect.width + 'px';
-      flyImg.style.opacity = '1';
-
-      flyImg.getBoundingClientRect();
-
-      const cartRect = cartIcon.getBoundingClientRect();
-      const target = getPageCoords(cartRect);
-
-      const targetX = target.left + cartRect.width / 2 - 15;
-      const targetY = target.top + cartRect.height / 2 - 15;
-
-      setTimeout(() => {
-        flyImg.style.left = targetX + 'px';
-        flyImg.style.top = targetY + 'px';
-        flyImg.style.width = '30px';
-        flyImg.style.opacity = '0.2';
-      }, 20);
-
-   // optional: bounce the cart when animation ends
-      flyImg.addEventListener('transitionend', function onEnd() {
-        flyImg.removeEventListener('transitionend', onEnd);
-
-        if (cartLink) {
-          cartLink.classList.add('cart-bounce');
-          setTimeout(() => cartLink.classList.remove('cart-bounce'), 450);
-        } else {
-          cartIcon.classList.add('cart-bounce');
-          setTimeout(() => cartIcon.classList.remove('cart-bounce'), 450);
-        }
-
-        flyImg.remove();
-      });
-    });
-  });
-});
-
-
-
-
-
 </script>
 
 </body>

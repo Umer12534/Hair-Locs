@@ -4,3 +4,235 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* Hero Section */
+.about-hero {
+    margin-top: 141px;
+    background: linear-gradient(rgba(42, 33, 21, 0.8), rgba(42, 33, 21, 0.9)), url(/assets/images/about-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about-hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+ /* Content Sections */
+.about-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+.about-text{
+    flex: 1;
+}
+.about-image{
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.about-image:hover img {
+    transform: scale(1.03);
+}
+ .about-text h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Values Section */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--secondary);
+    margin-bottom: 50px;
+    position: relative;
+}
+.values {
+    margin-bottom: 80px;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background-color: #FAC6AE;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover .value-icon{
+    color: white;
+    transform: scale(1.1);
+}
+
+.value-icon {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.value-card h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Team Section */
+.team {
+    margin-bottom: 50px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.swiper-slide:hover .member-img img{
+    transform: scale(1.05);
+}
+.team-member .member-img {
+    height: 250px;
+    overflow: hidden;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.team-member .member-info{
+    padding: 25px 20px;
+    width: 100%;
+    height: 200px;
+}
+.member-info h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.member-info .member-desc {
+    color: #333;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.custom-nav{
+    position: relative;
+    z-index: 900;
+    bottom: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.custom-nav button{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color:#fac6ae55;
+    color: #333;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.custom-nav button:hover{
+    background-color: #FAC6AE;
+}
+/* CTA Section */
+.cta-section {
+    background-color: #FEF3EA;
+    color: #333;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FAC6AE;
+    color: #333;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+}

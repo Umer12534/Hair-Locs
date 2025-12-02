@@ -6,8 +6,13 @@
     <title>Hair Locs</title>
     <!-- tab logo -->
     <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- style css -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
 </head>
 <body>
     <div class="sticky">
@@ -50,8 +55,6 @@
         </nav>
     </div>
 
-    <!--  -->
-
 <!-- Hero Section -->
     <section class="about-hero">
         <div class="container">
@@ -61,13 +64,13 @@
     </section>
 
     <!-- About Content -->
-    <main class="container">
+    <main class="">
         <!-- Our Story Section -->
-        <section class="about-content">
+        <section class="about-content container">
             <div class="about-text">
                 <h3>From Passion to Profession</h3>
                 <p>Founded in 2012 by master loctician Maya Johnson, The Hair Locs began as a small studio with a big vision: to celebrate and elevate the beauty of natural hair through the art of locs. What started as a one-woman operation has grown into a thriving salon with a team of passionate, skilled stylists.</p>
-                <p>Our journey has been guided by a deep respect for the cultural significance of locs and a commitment to helping each client express their unique identity through their hair. We believe that locs are not just a hairstyle, but a statement of self-love, heritage, and personal power.</p>
+                <p>Our journey has been guided by a deep respect for the cultural significance of locs and a commitment to helping each client express their unique identity through their hair.</p>
                 <p>Over the years, we've cultivated a warm, welcoming environment where clients become family. Our salon is a safe space for everyone, regardless of where you are on your loc journey.</p>
             </div>
             <div class="about-image">
@@ -76,7 +79,7 @@
         </section>
 
         <!-- Our Values -->
-        <section class="values">
+        <section class="values container">
             <h2 class="section-title">Our Values</h2>
             <div class="values-container">
                 <div class="value-card">
@@ -105,54 +108,101 @@
             </div>
         </section>
 
-        <!-- Our Team - All Women -->
+        <!-- Our Team -->
         <section class="team">
-            <h2 class="section-title">Meet Our Expert Team</h2>
-            <div class="team-container">
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Maya Johnson">
+            <h2 class="section-title container">Meet Our Expert Team</h2>
+            <div class="team-container container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <!-- card-1 -->
+                    <div class="swiper-slide ">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Maya Johnson">
+                            </div>
+                            <div class="member-info">
+                                <h4>Maya Johnson</h4>
+                                <p>Founder & Master Loctician</p>
+                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="member-info">
-                        <h4>Maya Johnson</h4>
-                        <p>Founder & Master Loctician</p>
-                        <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
+                    <!-- card-2 -->
+                    <div class="swiper-slide">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Chloe Williams">
+                            </div>
+                            <div class="member-info">
+                                <h4>Chloe Williams</h4>
+                                <p>Senior Stylist & Color Specialist</p>
+                                <p class="member-desc">Expert in loc coloring, retwisting, and extensions with 10 years experience.</p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- card-3 -->
+                    <div class="swiper-slide">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Simone Carter">
+                            </div>
+                            <div class="member-info">
+                                <h4>Simone Carter</h4>
+                                <p>Loc Care Specialist</p>
+                                <p class="member-desc">Specializes in loc maintenance, repairs, and holistic hair health practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="swiper-slide">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Aisha Thompson">
+                            </div>
+                            <div class="member-info">
+                                <h4>Aisha Thompson</h4>
+                                <p>Stylist & Consultant</p>
+                                <p class="member-desc">Specializes in starter locs and helping clients transition to natural hairstyles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="swiper-slide">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Maya Johnson">
+                            </div>
+                            <div class="member-info">
+                                <h4>Maya Johnson</h4>
+                                <p>Founder & Master Loctician</p>
+                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-6 -->
+                    <div class="swiper-slide">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Maya Johnson">
+                            </div>
+                            <div class="member-info">
+                                <h4>Maya Johnson</h4>
+                                <p>Founder & Master Loctician</p>
+                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Chloe Williams">
-                    </div>
-                    <div class="member-info">
-                        <h4>Chloe Williams</h4>
-                        <p>Senior Stylist & Color Specialist</p>
-                        <p class="member-desc">Expert in loc coloring, retwisting, and extensions with 10 years experience.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Simone Carter">
-                    </div>
-                    <div class="member-info">
-                        <h4>Simone Carter</h4>
-                        <p>Loc Care Specialist</p>
-                        <p class="member-desc">Specializes in loc maintenance, repairs, and holistic hair health practices.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-img">
-                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Aisha Thompson">
-                    </div>
-                    <div class="member-info">
-                        <h4>Aisha Thompson</h4>
-                        <p>Stylist & Consultant</p>
-                        <p class="member-desc">Specializes in starter locs and helping clients transition to natural hairstyles.</p>
-                    </div>
-                </div>
-            </div>
+
+            </div>      
+            <!-- coustom buttont to maove cards -->
+            <div class="custom-nav">
+                   <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                   <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>          
         </section>
 
         <!-- CTA Section -->
@@ -163,7 +213,7 @@
         </section>
     </main>
 
-    <!--  -->
+
 
     <!-- footer -->
     <div class="footer-container">
@@ -221,6 +271,42 @@
             <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
         </div>
     </div>
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 1000,
 
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".cat-next",
+            prevEl: ".cat-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
 </body>
 </html>
