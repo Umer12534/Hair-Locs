@@ -2,7 +2,6 @@
 .faqs-categories-filter {
     margin-top: 141px;
     padding: 20px 40px;
-    background-color: #f9f9f9;
 }
 
 .filter-faqs-container {
@@ -147,7 +146,7 @@
 /* Contact Prompt */
 .contact-prompt {
     width: 100%;
-    margin: 40px auto;
+    margin-top: 40px;
     background-color: #FEF3EA;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

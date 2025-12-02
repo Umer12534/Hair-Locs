@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="filter-tags">
-                    <div class="filter-tag">All Categories</div>
+                    <div class="filter-tag filter-active">All Categories</div>
                     <div class="filter-tag">Hair Oils</div>
                     <div class="filter-tag">Shampoos</div>
                     <div class="filter-tag">Conditioners</div>
@@ -77,8 +77,8 @@
     </section>
 
     <!-- All categories with Swiper slider -->
-    <div class="all-categories">
-        <div class="categories-container">
+    <div class="all-categories ">
+        <div class="categories-container container">
             <div class="products">                
                 <h2 class="title-section">All Categories</h2>
                 
@@ -220,25 +220,41 @@
 
                         </div>
                         
-                         <div class="swiper-button-next"></div>
-                         <div class="swiper-button-prev"></div>
-                        
                         <!-- Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
-                    <!-- Navigation buttons -->
-                     <div class="slider-btn">
-                        
-
-                     </div>
+                    
                 </div>
             </div>
         </div>
+        <!-- coustom buttont to maove cards -->
+        <div class="custom-nav">
+               <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
+               <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
     </div>
 
+
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
     <!-- Feature products -->
-    <div class="feature-products">
-        <div class="feature-container">
+    <div class="feature-products ">
+        <div class="feature-container container">
             <div class="feature-cards">
                 <h2 class="title-section">Feature Products</h2>
 
@@ -376,20 +392,21 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".cat-next",
+                prevEl: ".cat-prev",
             },
             breakpoints: {
                 640: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
-                768: {
-                    slidesPerView: 2,
+                770: {
+                    slidesPerView: 3,
                     spaceBetween: 30,
                 },
-                1024: {
-                    slidesPerView: 3,
+
+                1400: {
+                    slidesPerView: 4,
                     spaceBetween: 40,
                 },
             },
