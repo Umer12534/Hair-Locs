@@ -15,8 +15,8 @@
     overflow: hidden;
 }
 
-/* Hero Section Layout - Desktop */
-.hero-section {
+/* Hero Section */
+.heroSwiper1 .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,8 +69,6 @@
 .hero-btn:hover {
     background-color: #f2a68c;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero Image - Desktop */
@@ -130,7 +128,7 @@
         background-color: transparent;
     }
 
-    .hero-section {
+    .heroSwiper1 .hero-section {
         flex-direction: column;
         justify-content: flex-end;
         padding: 0 40px 80px;
@@ -222,7 +220,7 @@
         height: 450px;
     }
 
-    .hero-section {
+    .heroSwiper1 .hero-section {
         padding: 0 20px 60px;
     }
 
@@ -262,7 +260,7 @@
         height: 400px;
     }
 
-    .hero-section {
+    .heroSwiper1 .hero-section {
         padding: 0 15px 50px;
     }
 
@@ -286,14 +284,14 @@
 
 /* Desktop adjustments (1200px and above) */
 @media (min-width: 1200px) {
-    .hero-section {
+    .heroSwiper1 .hero-section {
         max-width: 1400px;
         margin: 0 auto;
     }
 }
 
 
-
+/* scrolling bar */
 .scrolling-bar{
     width: 100%;
     overflow: hidden;
@@ -323,7 +321,6 @@
       transform: translateX(-50%);
     }
   }
-
 
 .custom-nav {
     position: absolute;
@@ -358,7 +355,7 @@
         display: none;
     }
 }
-
+/* all categories */
 .new-categories{
     position: relative;
     padding: 10px 0;
@@ -423,6 +420,9 @@
     background-color: #FAC6AE;
     text-decoration: none;
     color: black;
+    transition: all 0.3s ease;
+
+
 }
 
 .categories-container .category-btn-div{
@@ -435,7 +435,10 @@
     margin-top: 20px;
     margin-bottom: 10px;
 } 
-
+.category-btn-div a:hover{
+    color: white;
+    background-color: #f2a68c;
+}
 
 
 
@@ -460,7 +463,11 @@
     padding: 0 60px;
     height: 520px;
 }
-
+.heroSwiper2 .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .heroSwiper2 .hero-img {
     width: 300px;
     width: 50%;
@@ -504,6 +511,12 @@
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+.heroSwiper2 .hero-btn:hover{
+    color: white;
+    background-color: #f2a68c;
 }
 
 /* featured */
@@ -662,8 +675,12 @@
     transition: all 0.3s ease;
     min-width: 250px;
     box-sizing: border-box;
+    
 }
-
+.product-container .body-fit .product-btn-div a:hover{
+    color: white;
+    background-color: #f2a68c;
+}
 /* small desktops */
 @media (max-width: 1200px) {
     .product-grid {
