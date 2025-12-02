@@ -60,10 +60,10 @@
         </nav>
     </div>
 
-    <!-- 1st hero section swiper -->
-     <div class="swiper heroSwiper1">
+<!-- 1st Hero Swiper -->
+    <div class="swiper heroSwiper1">
         <div class="swiper-wrapper">
-            <!-- slider 1 -->
+            <!-- Slide 1 -->
             <div class="swiper-slide">
                 <div class="hero-section">
                     <div class="hero-text">
@@ -72,68 +72,70 @@
                             Whether you're just beginning your loc journey or seeking advanced techniques,
                             our expert guides and premium products will support your natural beauty.
                         </p>
-                        
                         <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
-                        
                     </div>
-                    
                     <div class="hero-img">
-                        <img src="assets/images/hero1.jpg" alt="">
+                        <img src="assets/images/hero1.jpg" alt="Natural hair care products">
                     </div>
                 </div>
             </div>
-            <!-- slider 2 -->
+            
+            <!-- Slide 2 -->
             <div class="swiper-slide">
                 <div class="hero-section">
                     <div class="hero-text">
-                        <h2>Mastering the Art of Locs and Natural Hair Care</h2>
+                        <h2>Premium Natural Hair Products</h2>
                         <p>
-                            Whether you're just beginning your loc journey or seeking advanced techniques,
-                            our expert guides and premium products will support your natural beauty.
+                            Discover our curated collection of organic and natural hair care solutions 
+                            designed specifically for locs and textured hair.
                         </p>
-                        <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
+                        <a href="/category.html" class="hero-btn">SHOP NOW</a>
                     </div>
                     <div class="hero-img">
-                        <img src="assets/images/hero1.jpg" alt="">
+                        <img src="assets/images/hero1.jpg" alt="Natural hair products">
                     </div>
                 </div>
             </div>
-            <!-- slider 3 -->
+            
+            <!-- Slide 3 -->
             <div class="swiper-slide">
                 <div class="hero-section">
                     <div class="hero-text">
-                        <h2>Mastering the Art of Locs and Natural Hair Care</h2>
+                        <h2>Expert Guides & Tutorials</h2>
                         <p>
-                            Whether you're just beginning your loc journey or seeking advanced techniques,
-                            our expert guides and premium products will support your natural beauty.
+                            Learn from professional stylists with our step-by-step tutorials 
+                            and comprehensive hair care guides.
                         </p>
-                        <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
+                        <a href="/category.html" class="hero-btn">LEARN MORE</a>
                     </div>
                     <div class="hero-img">
-                        <img src="assets/images/hero1.jpg" alt="">
+                        <img src="assets/images/hero1.jpg" alt="Hair care tutorial">
                     </div>
                 </div>
             </div>
-            <!-- slider 4 -->
+            
+            <!-- Slide 4 -->
             <div class="swiper-slide">
                 <div class="hero-section">
                     <div class="hero-text">
-                        <h2>Mastering the Art of Locs and Natural Hair Care</h2>
+                        <h2>Community & Support</h2>
                         <p>
-                            Whether you're just beginning your loc journey or seeking advanced techniques,
-                            our expert guides and premium products will support your natural beauty.
+                            Join our growing community of natural hair enthusiasts 
+                            sharing tips, experiences, and inspiration.
                         </p>
-                        <a href="/category.html" class="hero-btn">EXPLORE ALL PRODUCTS</a>
+                        <a href="/category.html" class="hero-btn">JOIN COMMUNITY</a>
                     </div>
                     <div class="hero-img">
-                        <img src="assets/images/hero1.jpg" alt="">
+                        <img src="assets/images/hero1.jpg" alt="Hair care community">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- pagination -->
+        
+        <!-- Pagination -->
         <div class="swiper-pagination"></div>
-     </div>
+    </div>
+
 
      <!-- new arival bar -->    
       <div class="scrolling-bar">
@@ -650,20 +652,36 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-    // hero section Swiper
+    // Initialize 1st hero Swiper
     const heroSwiper1 = new Swiper(".heroSwiper1", {
         loop: true,
-        spaceBetween: 30,
-        speed: 1500,
+        spaceBetween: 0,
+        speed: 1000,
         autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+            delay: 5000,
+            disableOnInteraction: false,
         },
         pagination: {
-            el: ".heroSwiper1 .swiper-pagination",
-            clickable: true, // this makes the dots clickable
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 1025px (Desktop)
+            1025: {
+                spaceBetween: 30,
+            }
+        },
+        // Add keyboard navigation
+        keyboard: {
+            enabled: true,
+        },
+        // Add mousewheel navigation
+        mousewheel: {
+            forceToAxis: true,
         },
     });
+
     
     const heroSwiper2 = new Swiper(".heroSwiper2", {
         loop: true,
