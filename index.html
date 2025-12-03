@@ -161,11 +161,20 @@
 
     <!-- All Categories Section -->
     <div class="new-categories">
+
+        <!-- coustom navigation -->
+         <div class="custom-nav">
+                <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
+         </div>
+
         <h2>All Categories</h2>
+
         <div class="categories-container">
             
             <div class="swiper custom-swiper">
-              <div class="swiper-wrapper custom-wrapper">
+              <div class="swiper-wrapper">
+
                 <!-- card 1 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -176,6 +185,7 @@
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
+
                 <!-- card 2 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -186,6 +196,7 @@
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
+
                 <!-- card 3 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -196,6 +207,7 @@
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
+
                 <!-- card 4 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -206,6 +218,7 @@
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
+
                 <!-- card 5 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -216,6 +229,7 @@
                         <p><i class="fa-solid fa-box-open"> 5</i></p>
                     </div>
                 </div>
+
                 <!-- card 6 -->
                 <div class="swiper-slide custom-slide">
                     <div class="card-img">
@@ -238,15 +252,12 @@
                 </div>
               </div>
             </div>
+            <!-- Explore Btn -->
             <div class="category-btn-div">
                 <a href="/category.html">EXPLORE ALL CATEGORIES</a>
             </div>
         </div>
-        <!-- coustom buttont to maove cards -->
-         <div class="custom-nav">
-                <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
-         </div>
+        
     </div>
 
     <!-- 2nd hero section swiper -->
@@ -703,9 +714,9 @@
         loop: true,
         slidesPerView: 1,
         spaceBetween: 10,
-        speed: 1000,
+        speed: 900,
         autoplay: {
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false,
         },
             navigation: {
@@ -718,12 +729,17 @@
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
+
         1024: {
           slidesPerView: 4,
-          spaceBetween: 50,
+          spaceBetween: 30,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 40,
         },
       },
     });
