@@ -22,16 +22,7 @@ html, body{
      scroll-behavior: smooth;
 }
 
-/* header */
-.sticky{
-    position: sticky;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'PoppinsCustom', sans-serif;
-}
+ /* Sale Banner */
 .sale-banner{
     font-family: "Roboto" ;
     background-color: #FAC6AE;
@@ -39,30 +30,59 @@ html, body{
     text-align: center;
     width: 100%;
     padding: 10px;
+    font-size: 14px;
 }
-.sale-banner p{
+.sale-banner p {
     background: inherit;
 }
+
+/* header */
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+/* Navigation */
 nav{
-    font-family: "Roboto", sans-serif;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: all 0.3s ease;
 }
-
 
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+/* Logo */
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+
+.logo{
+    height: 69px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+/* Navigation Tabs */
 .nav-tabs{
     display: flex;
     list-style: none;
     width: 40%;
-    flex: 1;
+    width: 33.33%;
     justify-content: flex-start;
 }
 .nav-tabs a{
@@ -72,50 +92,204 @@ nav{
     font-weight: bold;
     font-size: 16px;
     padding: 8px;
-    border-radius: 4px;
     transition: all 0.3s ease;  
 }
 .nav-tabs a:hover{
     color: #FAC6AE;
     
 }
-.logo-container{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    flex: 1;
-}
-.logo{
-    height: 75px;
-    width: auto;
-}
+/* Navigation Icon */
 .nav-icons{
     display: flex;
     width: 40%;
-    font-size: 20px;
-    flex: 1;
+    width: 33.33%;
+    gap: 1px;
     justify-content: flex-end;
+    align-items: center;
     
 }
 .nav-icons a{
     color: black;
     text-decoration: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 8px;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: larger;
 }
 .nav-icons a:hover{
     color: #FAC6AE;
+    background-color: rgba(250, 198, 174, 0.1);
 }
 
 
 .nav-tabs a.nav-active {
     color: #f2a68c !important;
     font-weight: bold;
+    border-bottom: 2px solid ;
+}
+
+.cart-link {
     position: relative;
 }
 
+.cart-count {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    background-color: #FAC6AE;
+    color: #000;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
 
+/* Cart Sidebar */
+    .cart-sidebar {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 360px;
+      height: 100%;
+      background-color: white;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+      transition: 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      z-index: 2000;
+    }
+    .cart-items{
+        padding: 5px 20px;
+        overflow-x: hidden;
+    }
+    .cart-sidebar.active {
+      right: 0;
+
+    }
+    .caret-sidebar-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        padding: 20px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .close-btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 800;
+      position: sticky;
+      bottom: 0;
+      z-index: 100;
+    }
+   
+    .cart-header-text {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      /* border-top: 1px solid #333; */
+    }
+
+    .item img {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .item-info {
+      flex: 1;
+    }
+
+    .item-info h4 {
+      font-size: 16px;
+      margin: 0 0 5px;
+      font-weight: 500;
+    }
+
+    .item-info p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .qty{
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        margin-top: 8px;
+    }
+    .qty-controls{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid #525252;
+    }
+    .qty-controls button{
+        position: sticky;
+        border: none;
+        background-color: transparent;
+        padding: 4px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .qty-controls button:hover{
+        background-color: rgba(250, 198, 174, 0.1);
+    }
+ 
+    .qty a{
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+    }
+    .checkout-btn {
+        margin-top: auto;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        border-top: 1px solid #979797;
+    }
+    .checkout-btn a{
+        text-decoration: none;
+        color: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 80%;
+        background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+        background-size: 0% 100%;    /* hidden at start */
+        background-position: left;
+        background-repeat: no-repeat;
+        border: 2px solid #FAC6AE;
+        background-color: #FAC6AE;
+        transition: all 0.4s ease;
+    }
+     .checkout-btn a:hover{
+        background-size: 100% 100%;
+        border: 2px solid #000;
+     }
 
 /* footer */
 .footer-container{
@@ -282,3 +456,10 @@ nav{
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
  }
+
+
+
+
+ /*  */
+
+ 

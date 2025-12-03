@@ -4,7 +4,6 @@
 .heroSwiper1 {
     width: 100%;
     height: 520px;
-    margin-top: 141px;
 }
 
 /* Swiper Slide */
@@ -847,13 +846,12 @@ padding: 15px 25px;
 
 .banner-slider .swiper {
     width: 100%;
-    height: 100%;
+    height: 70vh;
 }
 
 .banner-slider .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #444;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -864,7 +862,7 @@ padding: 15px 25px;
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .banner-slider .banner-slider{
     height: 100vh;
@@ -892,5 +890,4 @@ padding: 15px 25px;
 .test img{
     width: 100%;
     height: 100%;
-
 }

@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-        <div class="sticky">
+    <div class="sticky">
         <!-- sale banner -->
         <div class="sale-banner">
             <p>We are running a sale</p>
@@ -23,8 +23,7 @@
                 <!-- Left Tabs -->
                 <ul class="nav-tabs">
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="/category.html">Categories</a></li>
-                    <li><a href="/"  class="nav-active">Products</a></li>
+                    <li><a href="/products.html"  class="nav-active">Products</a></li>
                     <li><a href="/sale.html">Sale</a></li>
                     <li><a href="/Contact.html">Contact</a></li>
                     <li><a href="/faqs.html">FAQs</a></li>
@@ -46,8 +45,8 @@
                         <i class="fa-solid fa-user"></i>
                     </a>
                     <a href="#" class="cart-link">
-                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
-                        <span class="cart-count"></span>
+                        <i class="fa-solid fa-bag-shopping cart-icon"  onclick="toggleCart()" ></i>
+                        <span class="cart-count">3</span>
                     </a>
                  </div>
 
@@ -55,6 +54,91 @@
         </nav>
     </div>
 
+     <!-- cart side bar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="caret-sidebar-header">
+            <div class="cart-header-text">Your Cart</div>
+            <div class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="cart-items">
+            <!-- 1 item -->
+            <div class="item">
+                  <img src="/assets/images/CATEGORY 1.png" />
+                  <div class="item-info">
+                    <h4>Hair Locs Moisture Cream</h4>
+                    <p>Rs. 2,500</p>
+
+                    <div class="qty">
+                        <div class="qty-controls">
+                          <button><i class="fa-solid fa-minus"></i></button>
+                          <span>1</span>
+                          <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <a href="#">Remove</a>
+                    </div>
+                  </div>
+            </div>
+            <!--  item -->
+            <div class="item">
+                  <img src="/assets/images/CATEGORY 1.png" />
+                  <div class="item-info">
+                    <h4>Hair Locs Moisture Cream</h4>
+                    <p>Rs. 2,500</p>
+
+                    <div class="qty">
+                        <div class="qty-controls">
+                          <button><i class="fa-solid fa-minus"></i></button>
+                          <span>1</span>
+                          <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <a href="#">Remove</a>
+                    </div>
+                  </div>
+            </div>
+            <!-- 1 item -->
+            <div class="item">
+                  <img src="/assets/images/CATEGORY 1.png" />
+                  <div class="item-info">
+                    <h4>Hair Locs Moisture Cream</h4>
+                    <p>Rs. 2,500</p>
+
+                    <div class="qty">
+                        <div class="qty-controls">
+                          <button><i class="fa-solid fa-minus"></i></button>
+                          <span>1</span>
+                          <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <a href="#">Remove</a>
+                    </div>
+                  </div>
+            </div>
+            <!--  item -->
+            <div class="item">
+                  <img src="/assets/images/CATEGORY 1.png" />
+                  <div class="item-info">
+                    <h4>Hair Locs Moisture Cream</h4>
+                    <p>Rs. 2,500</p>
+
+                    <div class="qty">
+                        <div class="qty-controls">
+                          <button><i class="fa-solid fa-minus"></i></button>
+                          <span>1</span>
+                          <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <a href="#">Remove</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+      
+        
+      <div class="checkout-btn">
+        <a href="#">Proceed to Checkout</a>
+    </div>
+    </div>
+    <!--  -->
     <div class="test" style="height: 80vh;"></div>
 
         <!-- footer -->
@@ -117,7 +201,7 @@
 
 
 
-    <!-- active nav tabs -->
-    <script src="/assets/js/activ-navtabs.js"></script>
+    <!-- cart sider bar js -->
+    <script src="/assets/js/side-bar.js"></script>
 </body>
 </html>
