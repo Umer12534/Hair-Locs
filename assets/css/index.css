@@ -248,6 +248,10 @@
     .swiper-pagination-bullet-active {
         width: 25px !important;
     }
+
+   /* .heroSwiper1 .swiper-slide-2 .hero-img{
+    object-position: bottom;
+   } */
 }
 
 /* Small Mobile Styles (below 480px) */
