@@ -248,9 +248,6 @@
         width: 25px !important;
     }
 
-   /* .heroSwiper1 .swiper-slide-2 .hero-img{
-    object-position: bottom;
-   } */
 }
 
 /* Small Mobile Styles (below 480px) */
@@ -677,7 +674,7 @@ padding: 15px 25px;
 /* small desktops */
 @media (max-width: 1200px) {
     .product-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 18px;
     }
     
@@ -717,7 +714,7 @@ padding: 15px 25px;
 /* large phones */
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
     
