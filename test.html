@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No JS Cart Sidebar</title>
+
+<style>
+
+/* hide checkbox */
+#cartToggle {
+  display: none;
+}
+
+/* overlay */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s;
+}
+
+/* show overlay when checkbox checked */
+#cartToggle:checked ~ .cart-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* cart sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 15px rgba(0,0,0,.1);
+  transition: .4s;
+  padding: 20px;
+}
+
+/* slide when checkbox ON */
+#cartToggle:checked ~ .cart-sidebar {
+  right: 0;
+}
+
+/* cart button */
+.cart-btn {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px;
+  background: black;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+}
+
+/* close button inside sidebar */
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- 👇 THE CART CHECKBOX TRIGGER -->
+<input type="checkbox" id="cartToggle">
+
+<!-- OPEN CART BUTTON -->
+<label for="cartToggle" class="cart-btn">
+  <i class="fa-solid fa-bag-shopping"></i> Open Cart
+</label>
+
+<!-- Background overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Sidebar -->
+<div class="cart-sidebar">
+  <!-- close button -->
+  <label for="cartToggle" class="close-btn">✖ Close</label>
+
+  <h3>Your Cart</h3>
+  <p>1x Hair Locs Moisture Cream</p>
+</div>
+
+</body>
+</html>

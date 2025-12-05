@@ -7,7 +7,7 @@
 
 /* Hero Section */
 .about-hero {
-    background: linear-gradient(rgba(42, 33, 21, 0.8), rgba(42, 33, 21, 0.9)), url(/assets/images/about-hero.jpg);
+    background: linear-gradient(rgba(42, 33, 21, 0.8), rgba(42, 33, 21, 0.9)), url(/assets/images/contact-hero.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -196,11 +196,13 @@
 }
 /* CTA Section */
 .cta-section {
-    background-color: #FEF3EA;
+    /* background-image: linear-gradient(to bottom #fff #fef3af); */
+      background-image: linear-gradient(to top, #fef7f3, #FEF3EA);
+    /* background-color: #FEF3EA; */
     color: #333;
     padding: 80px 0;
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     border-radius: 10px;
 }
 
@@ -221,7 +223,7 @@
     background-color: #FAC6AE;
     color: #333;
     padding: 15px 35px;
-    border-radius: 50px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -233,5 +235,6 @@
 }
 
 .btn:hover {
-    background-color: white;
+    color: white;
+    background-color: #f2a68c;
 }

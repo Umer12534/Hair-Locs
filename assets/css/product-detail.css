@@ -1,0 +1,186 @@
+/* product */
+.product-wrapper{
+    width: 90%;
+    margin: auto;
+    padding: 30px 20px;
+    display: flex;
+    gap: 40px;
+}
+
+/* LEFT IMAGES SECTION */
+.left{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN IMAGE */
+.main-img{
+  width:100%;
+  height:450px;
+  border-radius:5px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+.main-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:all 0.3s ease;
+}
+
+/* THUMBNAILS */
+.thumbs{
+  display:flex;
+  gap:15px;
+}
+
+.thumbs label{
+  width:80px;
+  height:80px;
+  border-radius:8px;
+  overflow:hidden;
+  cursor:pointer;
+  border:2px solid transparent;
+  transition:.3s;
+}
+
+.thumbs img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Hide radio */
+input[type=radio]{display:none;}
+
+#img1:checked ~ .left .main-img img{content:url('/assets/images/sale-product\ \(1\).jpg');}
+#img2:checked ~ .left .main-img img{content:url('/assets/images/sale-product\ \(2\).jpg');}
+#img3:checked ~ .left .main-img img{content:url('/assets/images/sale-product\ \(3\).jpg');}
+
+/* ACTIVE THUMB BORDER */
+#img1:checked ~ .left .thumbs .t1,
+#img2:checked ~ .left .thumbs .t2,
+#img3:checked ~ .left .thumbs .t3{
+  border-color:black;
+}
+
+/* PRODUCT INFO */
+.right{
+  width:45%;
+}
+.right h1{
+  font-size:32px;
+  margin-bottom:10px;
+  font-weight:600;
+}
+.stars{color:gold;margin:10px 0;}
+.price{font-size:24px;margin:10px 0;font-weight:600;}
+.desc{margin:20px 0;line-height:1.5;color:#555;}
+
+/* Quantity */
+.quantity-box{
+  margin:20px 0;
+}
+.quantity-box .qty-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid #999;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.quantity-box label{
+  font-weight:600;
+  display:block;
+  margin-bottom:6px;
+}
+
+.quantity-box input{
+  width:80px;
+  padding:10px 10px;
+  border: none;
+  text-align:center;
+  font-size:16px;
+}
+.quantity-box .qty-box button{
+    border: none;
+    background-color: #bcbbbb7a;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+.quantity-box .qty-box button:hover{
+    background-color: #999;
+}
+
+/* Add to cart */
+.btn-cart{
+  width:100%;
+  background-color: #FAC6AE;
+  color:black;
+  padding:15px;
+  border:none;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:20px;
+  transition:all 0.3s ease;
+}
+
+.btn-cart:hover{background-color: #f2a68c;}
+
+/* RELATED PRODUCTS */
+.related-section{
+  width:90%;
+  margin:70px auto;
+}
+
+.related-section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.related-container{
+  display:flex;
+  gap:20px;
+  justify-content:space-between;
+}
+
+.related-card{
+  width:30%;
+  background:white;
+  border-radius:12px;
+  padding:10px;
+  text-align:center;
+  transition:.3s;
+}
+
+.related-card .image-div{
+    overflow: hidden;
+}
+.related-card img{
+  width:100%;
+  height:250px;
+  border-radius:10px;
+  object-fit:cover;
+  overflow: hidden;
+}
+
+.related-card:hover img{
+  transform: scale(1.05);
+}
+
+.related-card h3{
+  margin-top:15px;
+  font-size:18px;
+  font-weight:600;
+}
+.related-card p{
+  margin:8px 0;
+  font-size:16px;
+  font-weight:500;
+}

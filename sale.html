@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Locs</title>
     <!-- tab logo -->
-    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
+    <link rel="icon" type="image/png" href="./assets/images/tab-logo.png">
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- style.css -->
-     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- sale css -->
+     <link rel="stylesheet" href="./assets/css/sale.css">
 </head>
 <body>
         <div class="sticky">
@@ -24,9 +26,10 @@
                 <ul class="nav-tabs">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/products.html">Products</a></li>
+                    <li><a href="/category.html">Categories</a></li>
                     <li><a href="/sale.html" class="nav-active">Sale</a></li>
                     <li><a href="/Contact.html">Contact</a></li>
-                    <li><a href="/faqs.html">FAQs</a></li>
+                    
                 </ul>
             
                 <!-- Logo -->
@@ -139,8 +142,219 @@
     </div>
     </div>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Sale</h1>
+            <p>Up to 50% off on premium hair locs products</p>
+        </div>
+    </section>
 
-    <div class="test" style="height: 80vh;"></div>
+    <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="layout-switch">
+                <i class="fa-solid fa-grip"></i>
+                <i class="fa-solid fa-grip-vertical"></i>
+                <i class="fa-solid fa-grip-lines"></i>
+            </div>
+            <div class="product-count">
+                Showing <span>24</span> products
+            </div>
+            <div class="sort-options">
+                <select id="sort-by">
+                    <option value="default">Sort by: Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                    <option value="popularity">Popularity</option>
+                </select>
+            </div>
+        </div>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Sidebar with filters -->
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="price-inputs">
+                    <input type="number" id="min-price" placeholder="Min" value="0">
+                    <div> to </div>
+
+                    <input type="number" id="max-price" placeholder="Max" value="5000">
+                </div>
+
+            </div>
+            
+            <div class="filter-group">
+                <h4>Availability</h4>
+                <div class="filter-options">
+                    <label>
+                        <input type="checkbox" checked> In Stock
+                    </label>
+                    <label>
+                        <input type="checkbox"> Out of Stock
+                    </label>
+                </div>
+            </div>
+            <a href="#" class="applyFilterBtn">Apply Filters</a>
+        </aside>
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (1).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Nourishing hair oil for deep conditioning and growth.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 799</span>
+                        <span class="sale-price">Rs 599</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (2).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Moisturizing shampoo for locs, gentle and sulfate-free.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 899</span>
+                        <span class="sale-price">Rs 699</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 150</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (3).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Deep conditioner to restore moisture and shine to locs.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 849</span>
+                        <span class="sale-price">Rs 699</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 300</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (4).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Holding spray for locs, provides light hold and shine.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 999</span>
+                        <span class="sale-price">Rs 699</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 250</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (5).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Rich hair butter for loc maintenance and moisture lock.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 749</span>
+                        <span class="sale-price">Rs 499</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (6).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Soothing scalp treatment for itch relief and health.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 1099</span>
+                        <span class="sale-price">Rs 899</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (7).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Soothing scalp treatment for itch relief and health.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 1099</span>
+                        <span class="sale-price">Rs 899</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (8).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Soothing scalp treatment for itch relief and health.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 1099</span>
+                        <span class="sale-price">Rs 899</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="save-badge">Save Rs 200</div>
+                <div class="product-image">
+                    <img src="/assets/images/sale-product (9).jpg" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <p class="product-description">Soothing scalp treatment for itch relief and health.</p>
+                    <div class="product-price">
+                        <span class="original-price">Rs 1099</span>
+                        <span class="sale-price">Rs 899</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+
+            
+            
+        </div>
+    </div>
+
+
+
+    
         <!-- footer -->
     <div class="footer-container">
         <div class="body-fit">
