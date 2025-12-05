@@ -15,6 +15,9 @@
     
 </head>
 <body>
+     <!-- Background overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    
     <!-- header -->
     <div class="sticky">
         <!-- sale banner -->
@@ -46,8 +49,8 @@
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
                     </a>
-                    <a href="#" class="cart-link">
-                        <i class="fa-solid fa-bag-shopping cart-icon" onclick="toggleCart()"></i>
+                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                         <span class="cart-count"></span>
                     </a>
                  </div>

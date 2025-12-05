@@ -12,6 +12,9 @@
      <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+     <!-- Background overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
     <div class="sticky">
         <!-- sale banner -->
         <div class="sale-banner">
@@ -44,8 +47,8 @@
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
                     </a>
-                    <a href="#" class="cart-link">
-                        <i class="fa-solid fa-bag-shopping cart-icon"  onclick="toggleCart()" ></i>
+                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                         <span class="cart-count"></span>
                     </a>
                  </div>
@@ -201,7 +204,7 @@
 
 
 
-    <!-- cart sider bar js -->
-    <script src="/assets/js/side-bar.js"></script>
+    <!-- side cart slider js -->
+    <script src="./assets/js/side-bar.js"></script>
 </body>
 </html>

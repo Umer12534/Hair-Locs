@@ -13,8 +13,12 @@
     <!-- style css -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/about.css">
+    
 </head>
 <body>
+     <!-- Background overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
     <div class="sticky">
         <!-- sale banner -->
         <div class="sale-banner">
@@ -47,8 +51,8 @@
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
                     </a>
-                    <a href="#" class="cart-link">
-                        <i class="fa-solid fa-bag-shopping cart-icon" onclick="toggleCart()"></i>
+                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                         <span class="cart-count"></span>
                     </a>
                  </div>
@@ -359,8 +363,8 @@
             <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
         </div>
     </div>
-    <!-- cart sider bar js -->
-     <script src="/assets/js/side-bar.js"></script>
+    <!-- side cart slider js -->
+    <script src="./assets/js/side-bar.js"></script>
  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
