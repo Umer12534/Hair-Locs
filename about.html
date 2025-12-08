@@ -1,406 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Locs</title>
     <!-- tab logo -->
-    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png" />
     <!-- font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- style css -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/about.css">
-    
-</head>
-<body>
-     <!-- Background overlay -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+  </head>
+  <body>
+    <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
 
     <div class="sticky">
-        <!-- sale banner -->
-        <div class="sale-banner">
-            <p>We are running a sale</p>
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale</p>
+      </div>
+      <!-- navigation bar -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/category.html">Categories</a></li>
+            <li><a href="/sale.html">Sale</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- centered Logo -->
+          <div class="logo-container">
+            <a href="#">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="/index.html">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
         </div>
-        <!-- navigation bar -->
-        <nav>
-            <div class="nav-container">
-                <!-- Left Tabs -->
-                <ul class="nav-tabs">
-                    <li><a href="/index.html" >Home</a></li>
-                    <li><a href="/products.html">Products</a></li>
-                    <li><a href="/category.html">Categories</a></li>
-                    <li><a href="/sale.html">Sale</a></li>
-                    <li><a href="/Contact.html">Contact</a></li>
-                </ul>
-            
-                <!-- centered Logo -->
-                 <div class="logo-container">
-                     <a href="#">
-                        <img src="assets/images/Logo.png" alt="logo" class="logo">
-                     </a>
-                 </div>
-             
-                 <!-- Right Icons -->
-                 <div class="nav-icons">
-                    <a href="/index.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
-                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
-                        <span class="cart-count"></span>
-                    </a>
-                 </div>
-            </div>
-        </nav>
+      </nav>
     </div>
 
-
-     <!-- cart side bar -->
+    <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="caret-sidebar-header">
-            <div class="cart-header-text">Your Cart</div>
-            <div class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="cart-items">
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
             </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-      
-        
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="checkout-btn">
         <a href="#">Proceed to Checkout</a>
-    </div>
+      </div>
     </div>
 
-
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="about-hero">
-        <div class="container">
-            <h1>Our Story</h1>
-            <p>For over a decade, The Hair Locs has been dedicated to the art and culture of beautiful, healthy locs. We are more than a salon - we are a community.</p>
-        </div>
+      <div class="container">
+        <h1>Our Story</h1>
+        <p>
+          For over a decade, The Hair Locs has been dedicated to the art and
+          culture of beautiful, healthy locs. We are more than a salon - we are
+          a community.
+        </p>
+      </div>
     </section>
 
     <!-- About Content -->
     <main class="">
-        <!-- Our Story Section -->
-        <section class="about-content container">
-            <div class="about-text">
-                <h3>From Passion to Profession</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero assumenda praesentium velit alias doloremque maxime, consequatur dolorum. Dolore non excepturi sit provident vel aut ex tempora iste accusamus libero?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, et. Suscipit laboriosam quis fugiat inventore, natus cupiditate veniam at commodi tenetur, dolore ipsa blanditiis tempora eum. Qui sed ut accusantium similique vero a optio, voluptates dolor ipsam rerum ipsum debitis?</p>
-                <p>Over the years, we've cultivated a warm, welcoming environment where clients become family. Our salon is a safe space for everyone, regardless of where you are on your loc journey.</p>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Salon Interior">
-            </div>
-        </section>
+      <!-- Our Story Section -->
+      <section class="about-content container">
+        <div class="about-text">
+          <h3>From Passion to Profession</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            vero assumenda praesentium velit alias doloremque maxime,
+            consequatur dolorum. Dolore non excepturi sit provident vel aut ex
+            tempora iste accusamus libero?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+            et. Suscipit laboriosam quis fugiat inventore, natus cupiditate
+            veniam at commodi tenetur, dolore ipsa blanditiis tempora eum. Qui
+            sed ut accusantium similique vero a optio, voluptates dolor ipsam
+            rerum ipsum debitis?
+          </p>
+          <p>
+            Over the years, we've cultivated a warm, welcoming environment where
+            clients become family. Our salon is a safe space for everyone,
+            regardless of where you are on your loc journey.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            alt="Our Salon Interior"
+          />
+        </div>
+      </section>
 
-        <!-- Our Values -->
-        <section class="values container">
-            <h2 class="section-title">Our Values</h2>
-            <div class="values-container">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-hands"></i>
-                    </div>
-                    <h4>Quality & Craftsmanship</h4>
-                    <p>We use only the finest products and techniques to ensure your locs are healthy, strong, and beautifully crafted.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h4>Authenticity & Expression</h4>
-                    <p>We celebrate individuality and help you express your unique style through personalized loc styling and care.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Community & Education</h4>
-                    <p>We build lasting relationships with our clients and provide education on loc maintenance and healthy hair practices.</p>
-                </div>
+      <!-- Our Values -->
+      <section class="values container">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-container">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-hands"></i>
             </div>
-        </section>
+            <h4>Quality & Craftsmanship</h4>
+            <p>
+              We use only the finest products and techniques to ensure your locs
+              are healthy, strong, and beautifully crafted.
+            </p>
+          </div>
 
-        <!-- Our Team -->
-        <section class="team">
-            <h2 class="section-title container">Meet Our Expert Team</h2>
-            <div class="team-container container">
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <!-- card-1 -->
-                    <div class="swiper-slide ">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="/assets/images/team image 1.jpg" alt="Maya Johnson">
-                            </div>
-                            <div class="member-info">
-                                <h4>Maya Johnson</h4>
-                                <p>Founder & Master Loctician</p>
-                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-2 -->
-                    <div class="swiper-slide">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="/assets/images/team image-2.jpg" alt="Chloe Williams">
-                            </div>
-                            <div class="member-info">
-                                <h4>Chloe Williams</h4>
-                                <p>Senior Stylist & Color Specialist</p>
-                                <p class="member-desc">Expert in loc coloring, retwisting, and extensions with 10 years experience.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-3 -->
-                    <div class="swiper-slide">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="/assets/images/team image 3.jpg" alt="Simone Carter">
-                            </div>
-                            <div class="member-info">
-                                <h4>Simone Carter</h4>
-                                <p>Loc Care Specialist</p>
-                                <p class="member-desc">Specializes in loc maintenance, repairs, and holistic hair health practices.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-4 -->
-                    <div class="swiper-slide">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="/assets/images/team image-4.jpg" alt="Aisha Thompson">
-                            </div>
-                            <div class="member-info">
-                                <h4>Aisha Thompson</h4>
-                                <p>Stylist & Consultant</p>
-                                <p class="member-desc">Specializes in starter locs and helping clients transition to natural hairstyles.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card-5 -->
-                    <div class="swiper-slide">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="/assets/images/team image-5.jpg" alt="Maya Johnson">
-                            </div>
-                            <div class="member-info">
-                                <h4>Maya Johnson</h4>
-                                <p>Founder & Master Loctician</p>
-                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h4>Authenticity & Expression</h4>
+            <p>
+              We celebrate individuality and help you express your unique style
+              through personalized loc styling and care.
+            </p>
+          </div>
 
-                    <!-- card-6 -->
-                    <div class="swiper-slide">
-                        <div class="team-member">
-                            <div class="member-img">
-                                <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Maya Johnson">
-                            </div>
-                            <div class="member-info">
-                                <h4>Maya Johnson</h4>
-                                <p>Founder & Master Loctician</p>
-                                <p class="member-desc">15+ years of experience specializing in traditional and creative loc styling.</p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Community & Education</h4>
+            <p>
+              We build lasting relationships with our clients and provide
+              education on loc maintenance and healthy hair practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team -->
+      <section class="team">
+        <h2 class="section-title container">Meet Our Expert Team</h2>
+        <div class="team-container container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- card-1 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="/assets/images/team image 1.jpg"
+                      alt="Maya Johnson"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Maya Johnson</h4>
+                    <p>Founder & Master Loctician</p>
+                    <p class="member-desc">
+                      15+ years of experience specializing in traditional and
+                      creative loc styling.
+                    </p>
                   </div>
                 </div>
+              </div>
+              <!-- card-2 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="/assets/images/team image-2.jpg"
+                      alt="Chloe Williams"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Chloe Williams</h4>
+                    <p>Senior Stylist & Color Specialist</p>
+                    <p class="member-desc">
+                      Expert in loc coloring, retwisting, and extensions with 10
+                      years experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="/assets/images/team image 3.jpg"
+                      alt="Simone Carter"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Simone Carter</h4>
+                    <p>Loc Care Specialist</p>
+                    <p class="member-desc">
+                      Specializes in loc maintenance, repairs, and holistic hair
+                      health practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- card-4 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="/assets/images/team image-4.jpg"
+                      alt="Aisha Thompson"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Aisha Thompson</h4>
+                    <p>Stylist & Consultant</p>
+                    <p class="member-desc">
+                      Specializes in starter locs and helping clients transition
+                      to natural hairstyles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- card-5 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="/assets/images/team image-5.jpg"
+                      alt="Maya Johnson"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Maya Johnson</h4>
+                    <p>Founder & Master Loctician</p>
+                    <p class="member-desc">
+                      15+ years of experience specializing in traditional and
+                      creative loc styling.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            </div>      
-            <!-- coustom buttont to maove cards -->
-            <div class="custom-nav">
-                   <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                   <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>          
-        </section>
+              <!-- card-6 -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Maya Johnson"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Maya Johnson</h4>
+                    <p>Founder & Master Loctician</p>
+                    <p class="member-desc">
+                      15+ years of experience specializing in traditional and
+                      creative loc styling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- coustom buttont to maove cards -->
+        <div class="custom-nav">
+          <button class="cat-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="cat-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>Begin Your Locs Journey With Us</h2>
-            <p>Whether you're starting your first set of locs or maintaining mature ones, our team is here to guide you every step of the way. Book a consultation to discuss your vision.</p>
-            <a href="contact.html" class="btn">Book a Consultation</a>
-        </section>
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <h2>Begin Your Locs Journey With Us</h2>
+        <p>
+          Whether you're starting your first set of locs or maintaining mature
+          ones, our team is here to guide you every step of the way. Book a
+          consultation to discuss your vision.
+        </p>
+        <a href="contact.html" class="btn">Book a Consultation</a>
+      </section>
     </main>
-
-
 
     <!-- footer -->
     <div class="footer-container">
-        <div class="body-fit">
-            <div class="footer-top">
-                <div class="footer-card">
-                    <a href="#">
-                        <img src="/assets/images/Logo.png" alt="Logo" class="footer-logo">
-                    </a>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Pages</h3></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/Contact.html">Contact</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="/category.html">Categories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Help</h3></li>
-                        <li><a href="/faqs.html">F.A.Qs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Contact US</h3></li>
-                        <li>Gujrat, punjab, pakistan</li>
-                        <li><p>Phone: </p>0333-3333333</li>
-                        <li><p>Email: </p>hairlocs@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="subscribe-section">
-                    <input type="text" placeholder="Email">
-                    <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="social-icons-btn-f"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                
-            </div>
-            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
+      <div class="body-fit">
+        <div class="footer-top">
+          <div class="footer-card">
+            <a href="#">
+              <img
+                src="/assets/images/Logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Pages</h3></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/Contact.html">Contact</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="/category.html">Categories</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Help</h3></li>
+              <li><a href="/faqs.html">F.A.Qs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Contact US</h3></li>
+              <li>Gujrat, punjab, pakistan</li>
+              <li>
+                <p>Phone:</p>
+                0333-3333333
+              </li>
+              <li>
+                <p>Email:</p>
+                hairlocs@gmail.com
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="subscribe-section">
+            <input type="text" placeholder="Email" />
+            <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icons-btn-f"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          @Copyrights reserved - 2025, This website is developed by UMER
+        </div>
+      </div>
     </div>
     <!-- side cart slider js -->
     <script src="./assets/js/side-bar.js"></script>
- <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 10,
         speed: 1000,
 
         autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+          delay: 3000,
+          disableOnInteraction: false,
         },
         navigation: {
-            nextEl: ".cat-next",
-            prevEl: ".cat-prev",
+          nextEl: ".cat-next",
+          prevEl: ".cat-prev",
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
-    });
-  </script>
-</body>
+      });
+    </script>
+  </body>
 </html>
