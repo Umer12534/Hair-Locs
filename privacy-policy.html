@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Locs</title>
+    <!-- tab logo -->
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png" />
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- privacy-policy css -->
+    <link rel="stylesheet" href="./assets/css/privacy-policy.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Background overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <div class="sticky">
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale - Get 20% off on all products!</p>
+      </div>
+
+      <!-- navegation barr -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./category.html">Categories</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo-container">
+            <a href="/index.html">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- cart side bar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-btn">
+        <a href="#">Proceed to Checkout</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="privacy-container">
+      <div class="privacy-header">
+        <h1>Privacy Policy</h1>
+        <p>
+          Welcome to The Hair Locs. Your privacy is extremely important to us.
+          This Privacy Policy explains how we collect, use, and protect your
+          personal information when you visit our website or make a purchase.
+        </p>
+        <div class="last-updated">
+          <i class="fas fa-calendar-alt"></i> Last Updated: March 2025
+        </div>
+      </div>
+
+      <div class="privacy-grid">
+        <div class="privacy-card">
+          <div class="privacy-card-icon">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <h3>Information We Collect</h3>
+          <ul>
+            <li>Name and contact information (email, phone number)</li>
+            <li>Shipping and billing addresses</li>
+            <li>
+              Payment details (processed securely through our payment gateway)
+            </li>
+            <li>Order history and purchase preferences</li>
+            <li>Device and browser information for analytics</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-card-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>How We Use Your Information</h3>
+          <ul>
+            <li>To process and deliver your orders</li>
+            <li>To communicate about your purchases and account</li>
+            <li>To improve our website and shopping experience</li>
+            <li>To send marketing communications (only with your consent)</li>
+            <li>To prevent fraud and ensure security</li>
+          </ul>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-card-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <h3>Information Sharing</h3>
+          <p>
+            We do not sell or rent your personal information to third parties.
+            We only share information with:
+          </p>
+          <ul>
+            <li>Shipping carriers for delivery purposes</li>
+            <li>Payment processors to complete transactions</li>
+            <li>Service providers who assist our operations</li>
+            <li>Legal authorities when required by law</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="data-protection">
+        <div class="data-protection-header">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Security of Your Data</h3>
+        </div>
+        <p>
+          We implement industry-standard security measures to protect your
+          personal information:
+        </p>
+
+        <div class="data-protection-grid">
+          <div class="protection-item">
+            <h4>Secure Servers</h4>
+            <p>
+              All data is stored on encrypted, secure servers with restricted
+              access.
+            </p>
+          </div>
+          <div class="protection-item">
+            <h4>Encrypted Payments</h4>
+            <p>
+              Payment information is processed through SSL-encrypted gateways.
+            </p>
+          </div>
+          <div class="protection-item">
+            <h4>Regular Audits</h4>
+            <p>Our security measures are regularly reviewed and updated.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookies-section">
+        <h3><i class="fas fa-cookie-bite"></i> Cookies & Tracking</h3>
+        <p>
+          We use cookies and similar tracking technologies to enhance your
+          browsing experience, analyze website traffic, and understand where our
+          visitors come from.
+        </p>
+
+        <div class="cookie-types">
+          <span class="cookie-tag">Essential Cookies</span>
+          <span class="cookie-tag">Performance Cookies</span>
+          <span class="cookie-tag">Functionality Cookies</span>
+          <span class="cookie-tag">Marketing Cookies</span>
+        </div>
+
+        <p style="margin-top: 20px">
+          You can control cookies through your browser settings. However,
+          disabling certain cookies may affect website functionality.
+        </p>
+      </div>
+
+      <div class="privacy-rights">
+        <h3><i class="fas fa-user-shield"></i> Your Privacy Rights</h3>
+        <p>You have the right to:</p>
+
+        <div class="rights-list">
+          <div class="right-item">
+            <h4>Access Your Data</h4>
+            <p>Request a copy of the personal information we hold about you.</p>
+          </div>
+          <div class="right-item">
+            <h4>Correct Information</h4>
+            <p>Update or correct any inaccurate personal information.</p>
+          </div>
+          <div class="right-item">
+            <h4>Delete Data</h4>
+            <p>
+              Request deletion of your personal information under certain
+              conditions.
+            </p>
+          </div>
+          <div class="right-item">
+            <h4>Opt-Out</h4>
+            <p>Unsubscribe from marketing communications at any time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h3>Questions About Our Privacy Policy?</h3>
+        <p>
+          If you have any questions, concerns, or would like to exercise your
+          privacy rights, please don't hesitate to contact our privacy team.
+        </p>
+
+        <a href="mailto:thehairlocs@gmail.com" class="contact-email">
+          <i class="fas fa-envelope"></i> Contact Our Privacy Team
+        </a>
+
+        <p style="margin-top: 25px; color: #777; font-size: 0.95rem">
+          <i class="fas fa-clock"></i> We typically respond within 48 hours
+          during business days.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container">
+      <div class="body-fit">
+        <div class="footer-top">
+          <div class="footer-card">
+            <a href="#">
+              <img
+                src="/assets/images/Logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Pages</h3></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/Contact.html">Contact</a></li>
+              <li><a href="/">Products</a></li>
+              <li><a href="/category.html">Categories</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Help</h3></li>
+              <li><a href="/faqs.html">F.A.Qs</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="./refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Contact US</h3></li>
+              <li>Gujrat, punjab, pakistan</li>
+              <li>
+                <p>Phone:</p>
+                0333-3333333
+              </li>
+              <li>
+                <p>Email:</p>
+                hairlocs@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="subscribe-section">
+            <input type="text" placeholder="Email" />
+            <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icons-btn-f"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          @Copyrights reserved - 2025, This website is developed by UMER
+        </div>
+      </div>
+    </div>
+
+    <!-- cart sider bar js -->
+    <script src="/assets/js/side-bar.js"></script>
+  </body>
+</html>

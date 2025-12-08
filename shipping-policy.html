@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Locs</title>
+    <!-- tab logo -->
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png" />
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- shipping-policy css -->
+    <link rel="stylesheet" href="./assets/css/shipping-policy.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Background overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <div class="sticky">
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale - Get 20% off on all products!</p>
+      </div>
+
+      <!-- navegation barr -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./category.html">Categories</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo-container">
+            <a href="/index.html">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- cart side bar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-btn">
+        <a href="#">Proceed to Checkout</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="policy-container">
+      <div class="policy-header">
+        <h1>Shipping Policy</h1>
+        <p>
+          Thank you for shopping at The Hair Locs! Below you'll find detailed
+          information about our shipping processes, delivery times, and
+          important details to ensure a smooth experience.
+        </p>
+      </div>
+
+      <div class="policy-content">
+        <div class="policy-section">
+          <h2><i class="fas fa-clock"></i> Processing Time</h2>
+          <p>
+            All orders are processed within
+            <strong>1–2 business days</strong> after payment confirmation.
+            Orders are not processed or shipped on weekends or holidays.
+          </p>
+          <p>
+            If we are experiencing a high volume of orders, processing times may
+            be longer than usual. In such cases, we will notify you via email.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2><i class="fas fa-shipping-fast"></i> Delivery Time</h2>
+          <p>
+            Once your order is processed and shipped, you can expect delivery
+            within the following timeframes:
+          </p>
+
+          <div class="delivery-time-container">
+            <div class="delivery-card">
+              <h3>Standard Delivery</h3>
+              <p>Within Pakistan</p>
+              <span class="time">3–7 Days</span>
+              <p>Working days</p>
+            </div>
+
+            <div class="delivery-card">
+              <h3>International</h3>
+              <p>Worldwide Shipping</p>
+              <span class="time">10–20 Days</span>
+              <p>Working days</p>
+            </div>
+          </div>
+
+          <p class="mt-3">
+            <em
+              >Please note: Delivery times are estimates and may vary due to
+              factors beyond our control such as customs clearance, weather
+              conditions, or carrier delays.</em
+            >
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2><i class="fas fa-calculator"></i> Shipping Charges</h2>
+          <p>
+            Shipping charges are calculated at checkout based on the following
+            factors:
+          </p>
+          <ul class="policy-list">
+            <li>Delivery location and destination</li>
+            <li>Total weight of your order</li>
+            <li>Selected shipping method</li>
+            <li>Any ongoing promotions or free shipping offers</li>
+          </ul>
+          <p>
+            We occasionally offer free shipping promotions which will be clearly
+            advertised on our website and social media channels.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2><i class="fas fa-map-marker-alt"></i> Order Tracking</h2>
+          <p>
+            Once your order is shipped, you will receive a tracking number via
+            SMS or Email (depending on the contact information provided).
+          </p>
+          <p>
+            You can use this tracking number to monitor your package's journey
+            on our carrier's website. If you haven't received tracking
+            information within 3 business days of your order confirmation,
+            please contact our customer service team.
+          </p>
+        </div>
+
+        <div class="important-note">
+          <h3>
+            <i class="fas fa-exclamation-triangle"></i> Important Address
+            Information
+          </h3>
+          <p>
+            <strong>Incorrect Shipping Address:</strong> The Hair Locs is not
+            responsible for delays or losses due to wrong address entries.
+            Please double-check your shipping address before completing your
+            purchase.
+          </p>
+          <p>
+            If you realize you've entered an incorrect address after placing
+            your order, please contact us immediately at
+            <strong>hairlocs@gmail.com</strong> with your order number and
+            correct address. We can only modify the shipping address if the
+            order hasn't been processed for shipping yet.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-support">
+        <h3>Need Help With Shipping?</h3>
+        <p>
+          If you have any questions about our shipping policy or need assistance
+          with an existing order, our customer service team is here to help!
+        </p>
+        <a href="./Contact.html" class="contact-btn"
+          >Contact Our Support Team</a
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container">
+      <div class="body-fit">
+        <div class="footer-top">
+          <div class="footer-card">
+            <a href="#">
+              <img
+                src="/assets/images/Logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Pages</h3></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/Contact.html">Contact</a></li>
+              <li><a href="/">Products</a></li>
+              <li><a href="/category.html">Categories</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Help</h3></li>
+              <li><a href="/faqs.html">F.A.Qs</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="./refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Contact US</h3></li>
+              <li>Gujrat, punjab, pakistan</li>
+              <li>
+                <p>Phone:</p>
+                0333-3333333
+              </li>
+              <li>
+                <p>Email:</p>
+                hairlocs@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="subscribe-section">
+            <input type="text" placeholder="Email" />
+            <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icons-btn-f"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          @Copyrights reserved - 2025, This website is developed by UMER
+        </div>
+      </div>
+    </div>
+
+    <!-- cart sider bar js -->
+    <script src="/assets/js/side-bar.js"></script>
+  </body>
+</html>
