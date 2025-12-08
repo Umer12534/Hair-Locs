@@ -519,7 +519,7 @@ nav {
     height: 100px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .footer-card {
     text-align: center;
   }
