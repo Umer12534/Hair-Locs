@@ -1,495 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Locs</title>
     <!-- tab logo -->
-    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png" />
     <!-- font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- category css -->
-    <link rel="stylesheet" href="/assets/css/category.css">
+    <link rel="stylesheet" href="/assets/css/category.css" />
     <!-- style css -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
     <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-    
+    <!-- header -->
     <div class="sticky">
-        <!-- sale banner -->
-        <div class="sale-banner">
-            <p>We are running a sale</p>
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale</p>
+      </div>
+      <!-- navigation bar -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/category.html" class="nav-active">Categories</a></li>
+            <li><a href="/sale.html">Sale</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- centered Logo -->
+          <div class="logo-container">
+            <a href="#">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="/index.html">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
         </div>
-        <!-- navigation bar -->
-        <nav>
-            <div class="nav-container">
-                <!-- Hamburger Toggle -->
-                <div class="nav-toggle">
-                  <i class="fa-solid fa-bars" onclick="togglenav()"></i>
-                </div>
-                <!-- Left Tabs -->
-                <ul class="nav-tabs" id="navtabs">
-                    <li class="nav-close" onclick="togglenav()">
-                      <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Products</a></li>
-                    <li><a href="/category.html" class="nav-active">Categories</a></li>
-                    <li><a href="/sale.html">Sale</a></li>
-                    <li><a href="/Contact.html">Contact</a></li>
-                </ul>
-            
-                <!-- centered Logo -->
-                 <div class="logo-container">
-                     <a href="#">
-                        <img src="assets/images/Logo.png" alt="logo" class="logo">
-                     </a>
-                 </div>
-             
-                 <!-- Right Icons -->
-                 <div class="nav-icons">
-                    <a href="/index.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
-                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
-                        <span class="cart-count"></span>
-                    </a>
-                 </div>
-            </div>
-        </nav>
+      </nav>
     </div>
 
-
-     <!-- cart side bar -->
+    <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="caret-sidebar-header">
-            <div class="cart-header-text">Your Cart</div>
-            <div class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="cart-items">
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
             </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-      
-        
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="checkout-btn">
         <a href="#">Proceed to Checkout</a>
-    </div>
+      </div>
     </div>
 
+    <!-- categories filter bar -->
     <section class="categories-filter">
-        <div class="container">
-            <div class="filter-container">
-                <div class="filter-search">
-                    <div class="search-box">
-                        <input type="text" placeholder="Search categories...">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div>
-                <div class="filter-tags">
-                    <div class="filter-tag filter-active">All Categories</div>
-                    <div class="filter-tag">Hair Oils</div>
-                    <div class="filter-tag">Shampoos</div>
-                    <div class="filter-tag">Conditioners</div>
-                    <div class="filter-tag">Styling</div>
-                </div>
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-search">
+            <div class="search-box">
+              <input type="text" placeholder="Search categories..." />
+              <i class="fas fa-search"></i>
             </div>
+          </div>
+          <div class="filter-tags">
+            <div class="filter-tag filter-active">All Categories</div>
+            <div class="filter-tag">Hair Oils</div>
+            <div class="filter-tag">Shampoos</div>
+            <div class="filter-tag">Conditioners</div>
+            <div class="filter-tag">Styling</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- All categories with Swiper slider -->
-    <div class="all-categories ">
-        <div class="categories-container container">
-            <div class="products">                
-                <h2 class="title-section">All Categories</h2>
-                
-                <!-- Swiper slider for categories -->
-                <div class="swiper-container">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Card 1 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/hair-oil category.jpg" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Hair Oils</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Card 2 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/shampo category.jpg" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Cleansing Shampoo</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Card 3 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/conditioner category 3.png" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Moisturizing Conditioners</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Card 4 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/styling.jpg" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Styling Products</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Card 5 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/StarterKits.jpg" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Starter Kits</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Card 6 -->
-                            <div class="swiper-slide">
-                                <div class="category-card">
-                                    <div class="category-image">
-                                        <img src="assets/images/Starter-Kit2.jpg" alt="Hair Oils">
-                                        <div class="category-overlay">
-                                            <h3>Starter Kits</h3>
-                                        </div>
-                                    </div>
-                                    <div class="category-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <div class="category-stats">
-                                            <div class="product-count">
-                                                <i class="fas fa-box-open"></i>
-                                                <span>15 Products</span>
-                                            </div>
-                                            <a href="#" class="category-btn">View Products</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="all-categories">
+      <div class="categories-container container">
+        <div class="products">
+          <h2 class="title-section">All Categories</h2>
 
-                        </div>
-                        
-                        <!-- Pagination -->
-                        <div class="swiper-pagination"></div>
+          <!-- Swiper slider for categories -->
+          <div class="swiper-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img
+                        src="assets/images/hair-oil category.jpg"
+                        alt="Hair Oils"
+                      />
+                      <div class="category-overlay">
+                        <h3>Hair Oils</h3>
+                      </div>
                     </div>
-                    
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img
+                        src="assets/images/shampo category.jpg"
+                        alt="Hair Oils"
+                      />
+                      <div class="category-overlay">
+                        <h3>Cleansing Shampoo</h3>
+                      </div>
+                    </div>
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img
+                        src="assets/images/conditioner category 3.png"
+                        alt="Hair Oils"
+                      />
+                      <div class="category-overlay">
+                        <h3>Moisturizing Conditioners</h3>
+                      </div>
+                    </div>
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img src="assets/images/styling.jpg" alt="Hair Oils" />
+                      <div class="category-overlay">
+                        <h3>Styling Products</h3>
+                      </div>
+                    </div>
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img
+                        src="assets/images/StarterKits.jpg"
+                        alt="Hair Oils"
+                      />
+                      <div class="category-overlay">
+                        <h3>Starter Kits</h3>
+                      </div>
+                    </div>
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="swiper-slide">
+                  <div class="category-card">
+                    <div class="category-image">
+                      <img
+                        src="assets/images/Starter-Kit2.jpg"
+                        alt="Hair Oils"
+                      />
+                      <div class="category-overlay">
+                        <h3>Starter Kits</h3>
+                      </div>
+                    </div>
+                    <div class="category-info">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <div class="category-stats">
+                        <div class="product-count">
+                          <i class="fas fa-box-open"></i>
+                          <span>15 Products</span>
+                        </div>
+                        <a href="#" class="category-btn">View Products</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
         </div>
-        <!-- coustom buttont to maove cards -->
-        <div class="custom-nav">
-               <button class="cat-prev"><i class="fa-solid fa-chevron-left"></i></button>
-               <button class="cat-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
+      </div>
+      <!-- coustom buttont to maove cards -->
+      <div class="custom-nav">
+        <button class="cat-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="cat-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
 
     <!-- Feature products -->
-    <div class="feature-products ">
-        <div class="feature-container container">
-            <div class="feature-cards">
-                <h2 class="title-section">Feature Products</h2>
+    <div class="feature-products">
+      <div class="feature-container container">
+        <div class="feature-cards">
+          <h2 class="title-section">Feature Products</h2>
 
-                <div class="categories-grid">
-                    <!-- card 1 -->
-                    <div class="category-card">
-                        <div class="category-image">
-                            <img src="assets/images/Feature product1.jpg" alt="Hair Oils">
-                        </div>
-                        <div class="product-info">
-                            <h3>Natural Loc Oil</h3>
-                            <p>Nourishing blend of natural oils for healthy locs</p>
-                            <div class="product-price">
-                                <span class="current-price">PKR 2,999</span>
-                                <span class="original-price">PKR 4,999</span>
-                            </div>
-                            <div class="product-btn-div">
-                                <a href="#" class="">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card 2 -->
-                    <div class="category-card">
-                        <div class="category-image">
-                            <img src="assets/images/Feature product2.jpg" alt="Hair Oils">
-                        </div>
-                        <div class="product-info">
-                            <h3>Natural Loc Oil</h3>
-                            <p>Nourishing blend of natural oils for healthy locs</p>
-                            <div class="product-price">
-                                <span class="current-price">PKR 2,999</span>
-                                <span class="original-price">PKR 4,999</span>
-                            </div>
-                            <div class="product-btn-div">
-                                <a href="#" class="">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- card 3 -->
-                    <div class="category-card">
-                        <div class="category-image">
-                            <img src="assets/images/Feature product3.jpg" alt="Hair Oils">
-                        </div>
-                        <div class="product-info">
-                            <h3>Natural Loc Oil</h3>
-                            <p>Nourishing blend of natural oils for healthy locs</p>
-                            <div class="product-price">
-                                <span class="current-price">PKR 2,999</span>
-                                <span class="original-price">PKR 4,999</span>
-                            </div>
-                            <div class="product-btn-div">
-                                <a href="#" class="">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="categories-grid">
+            <!-- card 1 -->
+            <div class="category-card">
+              <div class="category-image">
+                <img src="assets/images/Feature product1.jpg" alt="Hair Oils" />
+              </div>
+              <div class="product-info">
+                <h3>Natural Loc Oil</h3>
+                <p>Nourishing blend of natural oils for healthy locs</p>
+                <div class="product-price">
+                  <span class="current-price">PKR 2,999</span>
+                  <span class="original-price">PKR 4,999</span>
                 </div>
+                <div class="product-btn-div">
+                  <a href="#" class="">Add to Cart</a>
+                </div>
+              </div>
             </div>
+            <!-- card 2 -->
+            <div class="category-card">
+              <div class="category-image">
+                <img src="assets/images/Feature product2.jpg" alt="Hair Oils" />
+              </div>
+              <div class="product-info">
+                <h3>Natural Loc Oil</h3>
+                <p>Nourishing blend of natural oils for healthy locs</p>
+                <div class="product-price">
+                  <span class="current-price">PKR 2,999</span>
+                  <span class="original-price">PKR 4,999</span>
+                </div>
+                <div class="product-btn-div">
+                  <a href="#" class="">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="category-card">
+              <div class="category-image">
+                <img src="assets/images/Feature product3.jpg" alt="Hair Oils" />
+              </div>
+              <div class="product-info">
+                <h3>Natural Loc Oil</h3>
+                <p>Nourishing blend of natural oils for healthy locs</p>
+                <div class="product-price">
+                  <span class="current-price">PKR 2,999</span>
+                  <span class="original-price">PKR 4,999</span>
+                </div>
+                <div class="product-btn-div">
+                  <a href="#" class="">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- footer -->
     <div class="footer-container">
-        <div class="body-fit">
-            <div class="footer-top">
-                <div class="footer-card">
-                    <a href="#">
-                        <img src="/assets/images/Logo.png" alt="Logo" class="footer-logo">
-                    </a>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Pages</h3></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/Contact.html">Contact</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="/">Categories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                      <li><h3>Help</h3></li>
-                      <li><a href="/faqs.html">F.A.Qs</a></li>
-                      <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                      <li><a href="./shipping-policy.html">Shipping Policy</a></li>
-                      <li><a href="./refund-policy.html">Refund Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Contact US</h3></li>
-                        <li>Gujrat, punjab, pakistan</li>
-                        <li><p>Phone: </p>0333-3333333</li>
-                        <li><p>Email: </p>hairlocs@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="subscribe-section">
-                    <input type="text" placeholder="Email">
-                    <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="social-icons-btn-f"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                
-            </div>
-            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
+      <div class="body-fit">
+        <div class="footer-top">
+          <div class="footer-card">
+            <a href="#">
+              <img
+                src="/assets/images/Logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Pages</h3></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/Contact.html">Contact</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="/">Categories</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Help</h3></li>
+              <li><a href="/faqs.html">F.A.Qs</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="./refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Contact US</h3></li>
+              <li>Gujrat, punjab, pakistan</li>
+              <li>
+                <p>Phone:</p>
+                0333-3333333
+              </li>
+              <li>
+                <p>Email:</p>
+                hairlocs@gmail.com
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="subscribe-section">
+            <input type="text" placeholder="Email" />
+            <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icons-btn-f"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          @Copyrights reserved - 2025, This website is developed by UMER
+        </div>
+      </div>
     </div>
 
     <!-- side cart slider js -->
     <script src="./assets/js/side-bar.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <script>
-        // Initialize Swiper
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".cat-next",
-                prevEl: ".cat-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                770: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
 
-                1400: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-            },
-        });
-    </script>
-</body>
+    <script src="/assets/js/category.js"></script>
+  </body>
 </html>

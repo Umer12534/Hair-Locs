@@ -559,7 +559,7 @@
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
     color: #000;
   }
   .heroSwiper2 .hero-btn:hover {
