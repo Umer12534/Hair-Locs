@@ -30,7 +30,7 @@ const heroSwiper1 = new Swiper(".heroSwiper1", {
 const heroSwiper2 = new Swiper(".heroSwiper2", {
   loop: true,
   spaceBetween: 30,
-  speed: 900,
+  speed: 1000,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -41,6 +41,7 @@ const heroSwiper2 = new Swiper(".heroSwiper2", {
   },
 });
 
+// all categories slider
 var swiper = new Swiper(".custom-swiper", {
   loop: true,
   slidesPerView: 1,
@@ -75,6 +76,7 @@ var swiper = new Swiper(".custom-swiper", {
   },
 });
 
+// banner
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 1,
