@@ -902,7 +902,7 @@
 
 .banner-slider .swiper {
   width: 100%;
-  height: 70vh;
+  height: auto;
 }
 
 .banner-slider .swiper-slide {
