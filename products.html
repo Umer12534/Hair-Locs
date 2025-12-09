@@ -9,7 +9,10 @@
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- style.css -->
-     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- product css -->
+     <link rel="stylesheet" href="./assets/css/products.css">
+
 </head>
 <body>
      <!-- Background overlay -->
@@ -148,10 +151,589 @@
         <a href="#">Proceed to Checkout</a>
     </div>
     </div>
-    <!--  -->
-    <div class="test" style="height: 80vh;"></div>
 
-        <!-- footer -->
+    <!-- page header -->
+    <div class="page-header">
+        <h1>All Products</h1>
+        <p>Discover our premium collection of hair care products</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="layout-switch">
+            <i class="fa-solid fa-grip"></i>
+            <i class="fa-solid fa-grip-vertical"></i>
+            <i class="fa-solid fa-grip-lines"></i>
+        </div>
+        <div class="product-count">
+            Showing <span>24</span> products
+        </div>
+        <div class="sort-options">
+            <select id="sort-by">
+                <option value="default">Sort by: Default</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+    </div>
+    <!-- main contant -->
+    <div class="products-section">
+
+        <!-- Sidebar with filters -->
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <h4>
+                    Category
+                </h4>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-moisturizers" name="category" value="moisturizers">
+                        <label for="category-moisturizers">Moisturizers</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-oils" name="category" value="oils">
+                        <label for="category-oils">Oils & Serums</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-shampoos" name="category" value="shampoos">
+                        <label for="category-shampoos">Shampoos</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-conditioners" name="category" value="conditioners">
+                        <label for="category-conditioners">Conditioners</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-styling" name="category" value="styling">
+                        <label for="category-styling">Styling Products</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="price-inputs">
+                    <input type="number" id="min-price" placeholder="Min" value="0">
+                    <div> to </div>
+
+                    <input type="number" id="max-price" placeholder="Max" value="5000">
+                </div>
+
+            </div>
+            
+            <div class="filter-group">
+                <h4>Availability</h4>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="in-stock" checked>
+                        <label for="in-stock">In Stock</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="out-stock">
+                        <label for="out-stock">Out of Stock</label>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Hair Type Filter -->
+            <div class="filter-group">
+                <h3>
+                    Hair Type
+                </h3>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-dry" name="hair-type" value="dry">
+                        <label for="type-dry">Dry Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-oily" name="hair-type" value="oily">
+                        <label for="type-oily">Oily Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-damaged" name="hair-type" value="damaged">
+                        <label for="type-damaged">Damaged Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-curly" name="hair-type" value="curly">
+                        <label for="type-curly">Curly Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-straight" name="hair-type" value="straight">
+                        <label for="type-straight">Straight Hair</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-btn">
+                <a href="#" class="applyFilterBtn">Apply Filters</a>
+                <a href="#" class="clearFilterBtn">Clear All Filters</a>
+            </div>
+        </aside>
+    
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (1).jpg" alt="Hair Locs Moisture Cream">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Moisturizer</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hair Locs Moisture Cream</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="original-price">Rs. 3,000</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(128)</span>
+                    </div>
+                    <p class="product-description">Deep moisture cream for dry and curly hair. Provides 24-hour hydration.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (2).jpg" alt="Argan Oil Hair Serum">
+                    <span class="product-badge new-badge">NEW</span>
+                    <div class="product-category">Oil & Serum</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Argan Oil Hair Serum</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,800</span>
+                        <span class="original-price">Rs. 2,200</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="rating-count">(95)</span>
+                    </div>
+                    <p class="product-description">Pure argan oil serum for damaged hair repair and shine.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (3).jpg" alt="Scalp Revitalizing Shampoo">
+                    <div class="product-category">Shampoo</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Scalp Cleaning Shampoo</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,200</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="rating-count">(76)</span>
+                    </div>
+                    <p class="product-description">Gentle shampoo for oily scalp and straight hair maintenance.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (4).jpg" alt="Hydrating Conditioner">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Conditioner</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hydrating Conditioner</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,400</span>
+                        <span class="original-price">Rs. 1,700</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(112)</span>
+                    </div>
+                    <p class="product-description">Intense hydration conditioner for all hair types.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (5).jpg" alt="Curl Defining Gel">
+                    <div class="product-category">Styling Product</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Curl Defining Gel</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,600</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="rating-count">(89)</span>
+                    </div>
+                    <p class="product-description">Non-sticky gel for perfect curl definition and hold.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (6).jpg" alt="Hair Growth Oil">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Oil & Serum</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hair Growth Oil</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 3,200</span>
+                        <span class="original-price">Rs. 3,500</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="rating-count">(156)</span>
+                    </div>
+                    <p class="product-description">Natural oil blend for hair growth and thickness.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (1).jpg" alt="Hair Locs Moisture Cream">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Moisturizer</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hair Locs Moisture Cream</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="original-price">Rs. 3,000</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(128)</span>
+                    </div>
+                    <p class="product-description">Deep moisture cream for dry and curly hair. Provides 24-hour hydration.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (2).jpg" alt="Argan Oil Hair Serum">
+                    <span class="product-badge new-badge">NEW</span>
+                    <div class="product-category">Oil & Serum</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Argan Oil Hair Serum</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,800</span>
+                        <span class="original-price">Rs. 2,200</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="rating-count">(95)</span>
+                    </div>
+                    <p class="product-description">Pure argan oil serum for damaged hair repair and shine.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (3).jpg" alt="Scalp Revitalizing Shampoo">
+                    <div class="product-category">Shampoo</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Scalp Cleaning Shampoo</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,200</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="rating-count">(76)</span>
+                    </div>
+                    <p class="product-description">Gentle shampoo for oily scalp and straight hair maintenance.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (4).jpg" alt="Hydrating Conditioner">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Conditioner</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hydrating Conditioner</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,400</span>
+                        <span class="original-price">Rs. 1,700</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(112)</span>
+                    </div>
+                    <p class="product-description">Intense hydration conditioner for all hair types.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (5).jpg" alt="Curl Defining Gel">
+                    <div class="product-category">Styling Product</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Curl Defining Gel</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 1,600</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="rating-count">(89)</span>
+                    </div>
+                    <p class="product-description">Non-sticky gel for perfect curl definition and hold.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/products (6).jpg" alt="Hair Growth Oil">
+                    <span class="product-badge sale-badge">SALE</span>
+                    <div class="product-category">Oil & Serum</div>
+                </div>
+                <div class="product-info">
+                    
+                    <h3 class="product-title">
+                        <a href="./product-detail.html">Hair Growth Oil</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="current-price">Rs. 3,200</span>
+                        <span class="original-price">Rs. 3,500</span>
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="rating-count">(156)</span>
+                    </div>
+                    <p class="product-description">Natural oil blend for hair growth and thickness.</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="view-details-btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
     <div class="footer-container">
         <div class="body-fit">
             <div class="footer-top">
