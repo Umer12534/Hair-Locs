@@ -251,7 +251,7 @@
 }
 
 /* Small Mobile Styles (below 480px) */
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .heroSwiper1 {
     height: 400px;
   }
@@ -320,7 +320,18 @@
     transform: translateX(-50%);
   }
 }
-
+@media (max-width: 768px) {
+  .scrolling-text h3 {
+    padding: 10px;
+    font-weight: normal;
+    font-size: small;
+  }
+}
+@media (max-width: 320) {
+  .scrolling-text h3 {
+    padding: 5px;
+  }
+}
 /* all categories */
 .new-categories {
   position: relative;
