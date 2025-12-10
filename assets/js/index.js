@@ -10,6 +10,7 @@ const heroSwiper1 = new Swiper(".heroSwiper1", {
     el: ".swiper-pagination",
     clickable: true,
   },
+
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 1025px (Desktop)
