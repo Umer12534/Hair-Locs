@@ -118,6 +118,9 @@ nav {
   color: #fac6ae;
 }
 /* Navigation Icon */
+.side-icon-container {
+  display: none;
+}
 .nav-icons {
   display: flex;
   width: 40%;
@@ -159,7 +162,6 @@ nav {
   display: none;
 }
 
-/* responsive (mobile)*/
 @media (max-width: 768px) {
   .nav-tabs .nav-close {
     display: block;
@@ -170,22 +172,49 @@ nav {
     background-color: #ffffff;
     padding: 20px;
     top: 0;
-    left: -40%;
+    left: -60%;
     height: 100vh;
     position: fixed;
-    width: 40%;
+    width: 60%;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     transition: 0.4s ease;
     z-index: 20000;
   }
-  .nav-tabs a.nav-active {
-    border: none;
+  .nav-tabs a {
+    display: flex;
+    border-bottom: 1px solid #7d7d7d63;
+    font-weight: normal;
   }
   .nav-toggle {
     display: block;
   }
   .nav-container .active {
     left: 0;
+  }
+  .side-icon-container {
+    display: flex;
+    /* border-bottom: 1px solid #7d7d7d63; */
+    position: absolute;
+    bottom: 10px;
+  }
+  .side-icon-container li {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .side-icon-container li a {
+    border: none;
+  }
+}
+@media (max-width: 320px) {
+  .sale-banner {
+    padding: 2px;
+    font-size: 8px;
+  }
+  nav {
+    padding: 10px;
+  }
+  .nav-icons {
+    display: none;
   }
 }
 .cart-link {
