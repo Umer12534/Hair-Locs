@@ -487,6 +487,7 @@ nav {
   border-top-left-radius: 5px;
   padding: 10px;
   font-size: large;
+  border-radius: 0;
 }
 
 .subscribe-section a {
@@ -834,38 +835,13 @@ nav {
     padding-bottom: 60px;
   }
   /* Footer adjustments */
+
   .footer-top {
-    padding: 0 10px;
     flex-wrap: wrap;
   }
 
-  .footer-top .footer-card {
-    padding-top: 10px;
-  }
-
-  .footer-logo {
-    height: 50px;
-  }
-
-  .footer-top .footer-card {
-    width: 100px;
-  }
-
-  .footer-top .footer-card:first-child {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer-card ul h3 {
-    font-size: 0.7rem;
-  }
-
-  .footer-card ul li {
-    font-size: 8px;
-  }
-
   .footer-bottom .subscribe-section {
-    width: 150px;
+    width: 80%;
   }
 
   .social-icons a {

@@ -36,8 +36,8 @@
             <li class="nav-close" onclick="togglenav()">
               <i class="fa-solid fa-xmark"></i>
             </li>
-            <li><a href="/" class="nav-active">Home</a></li>
-            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product-detail.html" class="nav-active">Products</a></li>
             <li><a href="./category.html">Categories</a></li>
             <li><a href="./sale.html">Sale</a></li>
             <li><a href="./Contact.html">Contact</a></li>
@@ -211,6 +211,7 @@
         <a href="#">Proceed to Checkout</a>
       </div>
     </div>
+
     <!-- page header -->
     <div class="page-header">
         <h1>All Products</h1>
@@ -236,13 +237,17 @@
                 <option value="popularity">Popularity</option>
             </select>
         </div>
+        
+        <div  class="fliter-btn" onclick="togglefilter()">
+            Fliter
+        </div>
     </div>
     <!-- main contant -->
     <div class="products-section">
 
         <!-- Sidebar with filters -->
-        <aside class="sidebar">
-            <h3>Filters</h3>
+        <aside class="sidebar" id="filter-sidebar">
+            <h3>Filters <i class="fa-solid fa-xmark" onclick="togglefilter()"></i></h3>
             
 
             <!-- Category Filter -->
@@ -343,7 +348,10 @@
                 <div class="product-image">
                     <img src="/assets/images/products (1).jpg" alt="Hair Locs Moisture Cream">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Moisturizer</div>
+                    <div class="image-overlay product-category">
+                        Moisturizer
+                    </div>
+                    
                 </div>
                 <div class="product-info">
                     
@@ -376,12 +384,15 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (2).jpg" alt="Argan Oil Hair Serum">
                     <span class="product-badge new-badge">NEW</span>
-                    <div class="product-category">Oil & Serum</div>
+                    <div class="image-overlay product-category">
+                        Oil & Serum
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -414,11 +425,14 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (3).jpg" alt="Scalp Revitalizing Shampoo">
-                    <div class="product-category">Shampoo</div>
+                    <div class="image-overlay product-category">
+                        Shampoo
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -455,7 +469,9 @@
                 <div class="product-image">
                     <img src="/assets/images/products (4).jpg" alt="Hydrating Conditioner">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Conditioner</div>
+                    <div class="image-overlay product-category">
+                        Conditioner
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -492,7 +508,9 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (5).jpg" alt="Curl Defining Gel">
-                    <div class="product-category">Styling Product</div>
+                    <div class="image-overlay product-category">
+                        Styling Product
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -529,7 +547,9 @@
                 <div class="product-image">
                     <img src="/assets/images/products (6).jpg" alt="Hair Growth Oil">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Oil & Serum</div>
+                    <div class="image-overlay product-category">
+                        Oil & Serum
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -567,7 +587,10 @@
                 <div class="product-image">
                     <img src="/assets/images/products (1).jpg" alt="Hair Locs Moisture Cream">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Moisturizer</div>
+                    <div class="image-overlay product-category">
+                        Moisturizer
+                    </div>
+                    
                 </div>
                 <div class="product-info">
                     
@@ -600,12 +623,15 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product 8 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (2).jpg" alt="Argan Oil Hair Serum">
                     <span class="product-badge new-badge">NEW</span>
-                    <div class="product-category">Oil & Serum</div>
+                    <div class="image-overlay product-category">
+                        Oil & Serum
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -638,11 +664,14 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product 9 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (3).jpg" alt="Scalp Revitalizing Shampoo">
-                    <div class="product-category">Shampoo</div>
+                    <div class="image-overlay product-category">
+                        Shampoo
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -679,7 +708,9 @@
                 <div class="product-image">
                     <img src="/assets/images/products (4).jpg" alt="Hydrating Conditioner">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Conditioner</div>
+                    <div class="image-overlay product-category">
+                        Conditioner
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -716,7 +747,9 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="/assets/images/products (5).jpg" alt="Curl Defining Gel">
-                    <div class="product-category">Styling Product</div>
+                    <div class="image-overlay product-category">
+                        Styling Product
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -753,7 +786,9 @@
                 <div class="product-image">
                     <img src="/assets/images/products (6).jpg" alt="Hair Growth Oil">
                     <span class="product-badge sale-badge">SALE</span>
-                    <div class="product-category">Oil & Serum</div>
+                    <div class="image-overlay product-category">
+                        Oil & Serum
+                    </div>
                 </div>
                 <div class="product-info">
                     
@@ -786,8 +821,10 @@
                     </div>
                 </div>
             </div>
+
             
         </div>
+         <div class="overlay" id="overlay" onclick="togglefilter()"></div>
     </div>
 
     <!-- Pagination -->
@@ -864,9 +901,10 @@
         </div>
     </div>
 
-
-
     <!-- side cart slider js -->
     <script src="./assets/js/side-bar.js"></script>
+    <!-- productds js -->
+     <script src="./assets/js/products.js"></script>
+
 </body>
 </html>

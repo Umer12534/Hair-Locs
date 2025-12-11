@@ -26,19 +26,20 @@
 /* Filter Bar */
 .filter-bar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 0 30px;
   border-bottom: 1px solid #7d7d7d63;
 }
 
 .layout-switch {
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px 20px 20px 0;
+  padding: 20px;
   border-right: 1px solid #7d7d7d63;
 }
 
@@ -51,14 +52,31 @@
   color: black;
 }
 
+.fliter-btn {
+  font-size: 16px;
+  color: #666;
+  padding: 20px 20px;
+  width: 25%;
+}
 .product-count {
   font-size: 16px;
   color: #666;
   padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
-
 .sort-options {
   border-left: 1px solid #7d7d7d63;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fliter-btn {
+  border-left: 1px solid #7d7d7d63;
+  display: none;
 }
 
 .sort-options select {
@@ -79,6 +97,7 @@
   justify-content: center;
   max-width: 1400px;
   margin: auto;
+  margin-top: 10px;
 }
 
 /* Sidebar */
@@ -89,14 +108,21 @@
   height: fit-content;
   border-radius: 4px;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .sidebar h3 {
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   color: #333;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
+}
+.sidebar h3 i {
+  display: none;
 }
 
 .filter-group {
@@ -181,25 +207,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  width: 70%;
+  width: 75%;
   padding: 0 10px;
-}
-
-@media (max-width: 768px) {
-  .products-grid {
-    gap: 20px;
-    padding: 0 20px;
-    width: 100%;
-  }
-  .sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .product-card {
@@ -232,6 +241,18 @@
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white;
 }
 .product-badge {
   position: absolute;
@@ -353,6 +374,7 @@
   background-color: #fac6ae;
   border: none;
   border-radius: 4px;
+  color: black;
   cursor: pointer;
 }
 .view-details-btn:hover i {
@@ -397,4 +419,122 @@
 
 .pagination-dots {
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .filter-bar .product-count {
+    display: none;
+  }
+  .fliter-btn {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sort-options {
+    border: 0;
+    width: 50%;
+  }
+  .products-grid {
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .products-section {
+    position: relative;
+    /* flex-direction: column; */
+  }
+  .sidebar h3 i {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgb(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+}
+
+@media (max-width: 430px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .layout-switch i:first-child {
+    display: none;
+  }
+  .sidebar {
+    padding-bottom: 60px;
+  }
+  .pagination {
+    gap: 6px;
+  }
+
+  .pagination-btn,
+  .pagination-dots {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+
+  .pagination-btn.prev i,
+  .pagination-btn.next i {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .layout-switch i:last-child {
+    display: none;
+  }
+  .layout-switch {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .layout-switch i {
+    font-size: 20px;
+  }
+  .sort-options select {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+  }
+  .fliter-btn {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+  }
+  .pagination-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .pagination-dots {
+    font-size: 12px;
+  }
+
+  .pagination-btn.prev i,
+  .pagination-btn.next i {
+    margin: 0;
+  }
 }

@@ -426,7 +426,12 @@
     display: none;
   }
 }
-
+@media (max-width: 425px) {
+  .custom-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 /* Explore Button */
 .category-btn-div {
   display: flex;
