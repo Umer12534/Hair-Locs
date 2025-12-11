@@ -19,14 +19,14 @@
   <body>
     <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-
     <!-- header -->
     <div class="sticky">
       <!-- sale banner -->
       <div class="sale-banner">
-        <p>We are running a sale</p>
+        <p>We are running a sale - Get 20% off on all products!</p>
       </div>
-      <!-- navigation bar -->
+
+      <!-- navegation barr -->
       <nav>
         <div class="nav-container">
           <!-- Hamburger Toggle -->
@@ -38,14 +38,14 @@
             <li class="nav-close" onclick="togglenav()">
               <i class="fa-solid fa-xmark"></i>
             </li>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/products.html">Products</a></li>
-            <li><a href="/category.html">Categories</a></li>
-            <li><a href="/sale.html">Sale</a></li>
-            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/" class="nav-active">Home</a></li>
+            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./category.html">Categories</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
           </ul>
 
-          <!-- centered Logo -->
+          <!-- Logo -->
           <div class="logo-container">
             <a href="/index.html">
               <img src="assets/images/Logo.png" alt="logo" class="logo" />
@@ -72,6 +72,7 @@
         </div>
       </nav>
     </div>
+
     <!-- Bottom Mobile Navigation -->
     <div class="mobile-bottom-nav">
       <a href="/index.html" class="nav-item">
@@ -79,16 +80,22 @@
         <span>Home</span>
       </a>
 
-      <a href="#" class="nav-item" onclick="togglenav()">
-        <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>
+      <a href="#" class="nav-item">
+        <i class="fas fa-tags"></i>
+        <span>Sale</span>
       </a>
 
       <a href="/products.html" class="nav-item">
         <i class="fa-solid fa-grip"></i>
         <span>Products</span>
       </a>
+
+      <a href="#" class="nav-item" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
     </div>
+
     <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
       <div class="caret-sidebar-header">
@@ -99,6 +106,40 @@
       </div>
       <div class="cart-items">
         <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
         <div class="item">
           <img src="/assets/images/CATEGORY 1.png" />
           <div class="item-info">
@@ -172,7 +213,6 @@
         <a href="#">Proceed to Checkout</a>
       </div>
     </div>
-
     <!-- FAQs Categories -->
     <section class="faqs-categories-filter">
       <div class="container">

@@ -16,57 +16,60 @@
 <body>
     <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-
+    <!-- header -->
     <div class="sticky">
-        <!-- sale banner -->
-        <div class="sale-banner">
-            <p>We are running a sale</p>
-        </div>
-        <!-- navegation barr -->
-        <nav>
-            
-            <div class="nav-container">
-                <!-- Hamburger Toggle -->
-                <div class="nav-toggle">
-                  <i class="fa-solid fa-bars" onclick="togglenav()"></i>
-                </div>
-                <!-- Left Tabs -->
-                <ul class="nav-tabs " id="navtabs">
-                    <li class="nav-close" onclick="togglenav()">
-                      <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Products</a></li>
-                    <li><a href="/category.html">Categories</a></li>
-                    <li><a href="/sale.html" class="nav-active">Sale</a></li>
-                    <li><a href="/Contact.html">Contact</a></li>
-                    
-                </ul>
-            
-                <!-- Logo -->
-                 <div class="logo-container">
-                     <a href="/index.html">
-                        <img src="assets/images/Logo.png" alt="logo" class="logo">
-                     </a>
-                 </div>
-             
-                 <!-- Right Icons -->
-                 <div class="nav-icons">
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
-                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
-                        <span class="cart-count"></span>
-                    </a>
-                 </div>
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale - Get 20% off on all products!</p>
+      </div>
 
-            </div>
-        </nav>
+      <!-- navegation barr -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="/" class="nav-active">Home</a></li>
+            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./category.html">Categories</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo-container">
+            <a href="/index.html">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
+
     <!-- Bottom Mobile Navigation -->
     <div class="mobile-bottom-nav">
       <a href="/index.html" class="nav-item">
@@ -74,101 +77,140 @@
         <span>Home</span>
       </a>
 
-      <a href="#" class="nav-item" onclick="togglenav()">
-        <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>
+      <a href="#" class="nav-item">
+        <i class="fas fa-tags"></i>
+        <span>Sale</span>
       </a>
 
       <a href="/products.html" class="nav-item">
         <i class="fa-solid fa-grip"></i>
         <span>Products</span>
       </a>
+
+      <a href="#" class="nav-item" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
     </div>
-     <!-- cart side bar -->
+
+    <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="caret-sidebar-header">
-            <div class="cart-header-text">Your Cart</div>
-            <div class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="cart-items">
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
             </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-      
-        
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="checkout-btn">
         <a href="#">Proceed to Checkout</a>
+      </div>
     </div>
-    </div>
-
+    
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-text">

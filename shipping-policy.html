@@ -20,7 +20,7 @@
   <body>
     <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-
+    <!-- header -->
     <div class="sticky">
       <!-- sale banner -->
       <div class="sale-banner">
@@ -39,7 +39,7 @@
             <li class="nav-close" onclick="togglenav()">
               <i class="fa-solid fa-xmark"></i>
             </li>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="/" class="nav-active">Home</a></li>
             <li><a href="./product-detail.html">Products</a></li>
             <li><a href="./category.html">Categories</a></li>
             <li><a href="./sale.html">Sale</a></li>
@@ -73,6 +73,7 @@
         </div>
       </nav>
     </div>
+
     <!-- Bottom Mobile Navigation -->
     <div class="mobile-bottom-nav">
       <a href="/index.html" class="nav-item">
@@ -80,16 +81,22 @@
         <span>Home</span>
       </a>
 
-      <a href="#" class="nav-item" onclick="togglenav()">
-        <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>
+      <a href="#" class="nav-item">
+        <i class="fas fa-tags"></i>
+        <span>Sale</span>
       </a>
 
       <a href="/products.html" class="nav-item">
         <i class="fa-solid fa-grip"></i>
         <span>Products</span>
       </a>
+
+      <a href="#" class="nav-item" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
     </div>
+
     <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
       <div class="caret-sidebar-header">
@@ -207,7 +214,6 @@
         <a href="#">Proceed to Checkout</a>
       </div>
     </div>
-
     <!-- Main Content -->
     <div class="policy-container">
       <div class="policy-header">

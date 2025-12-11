@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Locs</title>
     <!-- tab logo -->
-    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png">
+    <link rel="icon" type="image/png" href="/assets/images/tab-logo.png" />
     <!-- font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- contact page css -->
-    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/contact.css" />
     <!-- style css -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
-</head>
-<body>
-     <!-- Background overlay -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Background overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-    
     <!-- header -->
     <div class="sticky">
-        <!-- sale banner -->
-        <div class="sale-banner">
-            <p>We are running a sale</p>
+      <!-- sale banner -->
+      <div class="sale-banner">
+        <p>We are running a sale - Get 20% off on all products!</p>
+      </div>
+
+      <!-- navegation barr -->
+      <nav>
+        <div class="nav-container">
+          <!-- Hamburger Toggle -->
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars" onclick="togglenav()"></i>
+          </div>
+          <!-- Left Tabs -->
+          <ul class="nav-tabs" id="navtabs">
+            <li class="nav-close" onclick="togglenav()">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li><a href="/" class="nav-active">Home</a></li>
+            <li><a href="./product-detail.html">Products</a></li>
+            <li><a href="./category.html">Categories</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo-container">
+            <a href="/index.html">
+              <img src="assets/images/Logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="nav-icons">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="cart-link"
+              onclick="toggleCart()"
+            >
+              <i class="fa-solid fa-bag-shopping cart-icon"></i>
+              <span class="cart-count"></span>
+            </a>
+          </div>
         </div>
-        <!-- navegation barr -->
-        <nav>
-            <div class="nav-container">
-                <!-- Hamburger Toggle -->
-                <div class="nav-toggle">
-                  <i class="fa-solid fa-bars" onclick="togglenav()"></i>
-                </div>
-                <!-- Left Tabs -->
-                <ul class="nav-tabs" id="navtabs">
-                    <li class="nav-close" onclick="togglenav()">
-                      <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Products</a></li>
-                    <li><a href="/category.html">Categories</a></li>
-                    <li><a href="/sale.html">Sale</a></li>
-                    <li><a href="/Contact.html" class="nav-active">Contact</a></li>
-                </ul>
-                <!-- centered Logo -->
-                 <div class="logo-container">
-                     <a href="#">
-                        <img src="assets/images/Logo.png" alt="logo" class="logo">
-                     </a>
-                 </div>
-                 <!-- Right Icons -->
-                 <div class="nav-icons">
-                    <a href="/index.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="cart-link" onclick="toggleCart()">
-                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
-                        <span class="cart-count"></span>
-                    </a>
-                 </div>
-            </div>
-        </nav>
+      </nav>
     </div>
+
     <!-- Bottom Mobile Navigation -->
     <div class="mobile-bottom-nav">
       <a href="/index.html" class="nav-item">
@@ -71,275 +80,368 @@
         <span>Home</span>
       </a>
 
-      <a href="#" class="nav-item" onclick="togglenav()">
-        <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>
+      <a href="#" class="nav-item">
+        <i class="fas fa-tags"></i>
+        <span>Sale</span>
       </a>
 
       <a href="/products.html" class="nav-item">
         <i class="fa-solid fa-grip"></i>
         <span>Products</span>
       </a>
+
+      <a href="#" class="nav-item" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
     </div>
-     <!-- cart side bar -->
+
+    <!-- cart side bar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="caret-sidebar-header">
-            <div class="cart-header-text">Your Cart</div>
-            <div class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="caret-sidebar-header">
+        <div class="cart-header-text">Your Cart</div>
+        <div class="close-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="cart-items">
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
+      </div>
+      <div class="cart-items">
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
             </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!-- 1 item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
-            <!--  item -->
-            <div class="item">
-                  <img src="/assets/images/CATEGORY 1.png" />
-                  <div class="item-info">
-                    <h4>Hair Locs Moisture Cream</h4>
-                    <p>Rs. 2,500</p>
-
-                    <div class="qty">
-                        <div class="qty-controls">
-                          <button><i class="fa-solid fa-minus"></i></button>
-                          <span>1</span>
-                          <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <a href="#">Remove</a>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
 
-      
-        
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <!--  item -->
+        <div class="item">
+          <img src="/assets/images/CATEGORY 1.png" />
+          <div class="item-info">
+            <h4>Hair Locs Moisture Cream</h4>
+            <p>Rs. 2,500</p>
+
+            <div class="qty">
+              <div class="qty-controls">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <span>1</span>
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <a href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="checkout-btn">
         <a href="#">Proceed to Checkout</a>
+      </div>
     </div>
-    </div>
-
     <!-- contact hero section -->
     <div class="herosection">
-        <div class="fit-body">
-            <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter for exclusive offers, hair care tips, and new product launches.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-            <div class="herosection-img">
-                <img src="/assets/images/caregory-hero-section-img2-removebg-preview.png" alt="">
-            </div>
+      <div class="fit-body">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to our newsletter for exclusive offers, hair care tips,
+            and new product launches.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
+        <div class="herosection-img">
+          <img
+            src="/assets/images/caregory-hero-section-img2-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
 
-     <div class="contact-content">
-        <div class="container">
-            <div class="contact-grid ">
-                <!--contact form -->
-                 <div class="contact-form">
-                    <h2>Send Us a Message</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" placeholder="Please share your questions, comments, or concerns..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-                <!-- Contact Information -->
-                 <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-text">
-                            <h3>Our Location</h3>
-                            <p>Gujrat, Punjab, Pakistan</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-text">
-                            <h3>Phone Number</h3>
-                            <p>0333-3333333</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-text">
-                            <h3>Email Address</h3>
-                            <p>hairlocs@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="info-text">
-                            <h3>Business Hours</h3>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                            <p>Saturday: 10:00 AM - 4:00 PM</p>
-                            <p>Sunday: Closed</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <!--contact form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="What is this regarding?"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Please share your questions, comments, or concerns..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-text">
+                <h3>Our Location</h3>
+                <p>Gujrat, Punjab, Pakistan</p>
+              </div>
             </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-text">
+                <h3>Phone Number</h3>
+                <p>0333-3333333</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h3>Email Address</h3>
+                <p>hairlocs@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-text">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
         </div>
-     </div>
-     
-     <!-- Map Section -->
+      </div>
+    </div>
+
+    <!-- Map Section -->
     <section class="map-section">
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13447.999378136888!2d74.06526129660493!3d32.5795282098902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f05328383dd61%3A0x37f6f2207ec41695!2sSmile%20Ladies%20Salon%20Gujrat!5e0!3m2!1sen!2s!4v1764044360993!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <h2>Find Us</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13447.999378136888!2d74.06526129660493!3d32.5795282098902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f05328383dd61%3A0x37f6f2207ec41695!2sSmile%20Ladies%20Salon%20Gujrat!5e0!3m2!1sen!2s!4v1764044360993!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <!-- <h2>Find Us</h2>
             <div class="map-container">
                 <div class="map-placeholder">
                     <i class="fas fa-map"></i>
                     <p>map integration</p>
                 </div>
             </div> -->
-        </div>
+      </div>
     </section>
-    
+
     <!-- footer -->
     <div class="footer-container">
-        <div class="body-fit">
-            <div class="footer-top">
-                <div class="footer-card">
-                    <a href="#">
-                        <img src="/assets/images/Logo.png" alt="Logo" class="footer-logo">
-                    </a>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Pages</h3></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/Contact.html">Contact</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="/category.html">Categories</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                      <li><h3>Help</h3></li>
-                      <li><a href="/faqs.html">F.A.Qs</a></li>
-                      <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                      <li><a href="./shipping-policy.html">Shipping Policy</a></li>
-                      <li><a href="./refund-policy.html">Refund Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    
-                    <ul>
-                        <li><h3>Contact US</h3></li>
-                        <li>Gujrat, punjab, pakistan</li>
-                        <li><p>Phone: </p>0333-3333333</li>
-                        <li><p>Email: </p>hairlocs@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="subscribe-section">
-                    <input type="text" placeholder="Email">
-                    <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="social-icons-btn-f"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="social-icons-btn"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                
-            </div>
-            <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
+      <div class="body-fit">
+        <div class="footer-top">
+          <div class="footer-card">
+            <a href="#">
+              <img
+                src="/assets/images/Logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Pages</h3></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/Contact.html">Contact</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="/category.html">Categories</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Help</h3></li>
+              <li><a href="/faqs.html">F.A.Qs</a></li>
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./shipping-policy.html">Shipping Policy</a></li>
+              <li><a href="./refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul>
+              <li><h3>Contact US</h3></li>
+              <li>Gujrat, punjab, pakistan</li>
+              <li>
+                <p>Phone:</p>
+                0333-3333333
+              </li>
+              <li>
+                <p>Email:</p>
+                hairlocs@gmail.com
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="subscribe-section">
+            <input type="text" placeholder="Email" />
+            <a href="#" class="subscribe-section-btn fa-solid fa-check"></a>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icons-btn-f"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="social-icons-btn"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          @Copyrights reserved - 2025, This website is developed by UMER
+        </div>
+      </div>
     </div>
 
     <!-- whatsapp icone -->
     <a href="#" class="whatsapp-ione">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">chat with us</span>
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">chat with us</span>
     </a>
     <!-- cart sider bar js -->
     <script src="/assets/js/side-bar.js"></script>
-</body>
+  </body>
 </html>

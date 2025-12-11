@@ -3,7 +3,7 @@ const heroSwiper1 = new Swiper(".heroSwiper1", {
   spaceBetween: 0,
   speed: 1000,
   autoplay: {
-    delay: 5000,
+    delay: 500000,
     disableOnInteraction: false,
   },
   pagination: {
