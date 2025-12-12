@@ -220,34 +220,68 @@
     </section>
 
     <!-- Filter Bar -->
-        <div class="filter-bar">
-            <div class="layout-switch">
-                <i class="fa-solid fa-grip"></i>
-                <i class="fa-solid fa-grip-vertical"></i>
-                <i class="fa-solid fa-grip-lines"></i>
-            </div>
-            <div class="product-count">
-                Showing <span>24</span> products
-            </div>
-            <div class="sort-options">
-                <select id="sort-by">
-                    <option value="default">Sort by: Default</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="name">Name: A to Z</option>
-                    <option value="popularity">Popularity</option>
-                </select>
-            </div>
+    <div class="filter-bar">
+        <div class="layout-switch">
+            <i class="fa-solid fa-grip"></i>
+            <i class="fa-solid fa-grip-vertical"></i>
+            <i class="fa-solid fa-grip-lines"></i>
         </div>
-
+        <div class="product-count">
+            Showing <span>24</span> products
+        </div>
+        <div class="sort-options">
+            <select id="sort-by">
+                <option value="default">Sort by: Default</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+        
+        <div  class="fliter-btn" onclick="togglefilter()">
+            Fliter
+        </div>
+    </div>
 
     <!-- Main Content -->
     <div class="main-content">
-        
-        <!-- Sidebar with filters -->
-        <aside class="sidebar">
-            <h3>Filters</h3>
+      <!-- Sidebar with filters -->
+        <aside class="sidebar" id="filter-sidebar">
+            <h3>Filters <i class="fa-solid fa-xmark" onclick="togglefilter()"></i></h3>
             
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <h4>
+                    Category
+                </h4>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-moisturizers" name="category" value="moisturizers">
+                        <label for="category-moisturizers">Moisturizers</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-oils" name="category" value="oils">
+                        <label for="category-oils">Oils & Serums</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-shampoos" name="category" value="shampoos">
+                        <label for="category-shampoos">Shampoos</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-conditioners" name="category" value="conditioners">
+                        <label for="category-conditioners">Conditioners</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="category-styling" name="category" value="styling">
+                        <label for="category-styling">Styling Products</label>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="filter-group">
                 <h4>Price Range</h4>
                 <div class="price-inputs">
@@ -262,16 +296,52 @@
             <div class="filter-group">
                 <h4>Availability</h4>
                 <div class="filter-options">
-                    <label>
-                        <input type="checkbox" checked> In Stock
-                    </label>
-                    <label>
-                        <input type="checkbox"> Out of Stock
-                    </label>
+                    <div class="filter-option">
+                        <input type="checkbox" id="in-stock" checked>
+                        <label for="in-stock">In Stock</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="out-stock">
+                        <label for="out-stock">Out of Stock</label>
+                    </div>
+                    
                 </div>
             </div>
-            <a href="#" class="applyFilterBtn">Apply Filters</a>
+
+            <!-- Hair Type Filter -->
+            <div class="filter-group">
+                <h3>
+                    Hair Type
+                </h3>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-dry" name="hair-type" value="dry">
+                        <label for="type-dry">Dry Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-oily" name="hair-type" value="oily">
+                        <label for="type-oily">Oily Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-damaged" name="hair-type" value="damaged">
+                        <label for="type-damaged">Damaged Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-curly" name="hair-type" value="curly">
+                        <label for="type-curly">Curly Hair</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="type-straight" name="hair-type" value="straight">
+                        <label for="type-straight">Straight Hair</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-btn">
+                <a href="#" class="applyFilterBtn">Apply Filters</a>
+                <a href="#" class="clearFilterBtn">Clear All Filters</a>
+            </div>
         </aside>
+
         <!-- Products Grid -->
         <div class="products-grid">
             <!-- Product Card 1 -->
@@ -297,7 +367,7 @@
                     <img src="/assets/images/sale-product (2).jpg" alt="Hair Oil">
                 </div>
                 <div class="product-info">
-                    <p class="product-description">Moisturizing shampoo for locs, gentle and sulfate-free.</p>
+                    <p class="product-description">Moisturizing shampoo for locs, gentle.</p>
                     <div class="product-price">
                         <span class="original-price">Rs 899</span>
                         <span class="sale-price">Rs 699</span>
@@ -329,7 +399,7 @@
                     <img src="/assets/images/sale-product (4).jpg" alt="Hair Oil">
                 </div>
                 <div class="product-info">
-                    <p class="product-description">Holding spray for locs, provides light hold and shine.</p>
+                    <p class="product-description">Holding spray for locs, provides light hold.</p>
                     <div class="product-price">
                         <span class="original-price">Rs 999</span>
                         <span class="sale-price">Rs 699</span>
@@ -345,7 +415,7 @@
                     <img src="/assets/images/sale-product (5).jpg" alt="Hair Oil">
                 </div>
                 <div class="product-info">
-                    <p class="product-description">Rich hair butter for loc maintenance and moisture lock.</p>
+                    <p class="product-description">Rich hair butter for loc maintenance and moisture.</p>
                     <div class="product-price">
                         <span class="original-price">Rs 749</span>
                         <span class="sale-price">Rs 499</span>
@@ -419,12 +489,13 @@
             
             
         </div>
+        <div class="overlay" id="overlay" onclick="togglefilter()"></div>
     </div>
 
 
 
     
-        <!-- footer -->
+    <!-- footer -->
     <div class="footer-container">
         <div class="body-fit">
             <div class="footer-top">
@@ -479,12 +550,13 @@
                 
             </div>
             <div class="footer-copyright">@Copyrights reserved - 2025, This website is developed by UMER</div>
-        </div>
     </div>
-
-
+    
+  </div>
 
     <!-- side cart slider js -->
-     <script src="./assets/js/side-bar.js"></script>
+    <script src="./assets/js/side-bar.js"></script>
+    <!-- side filter bar js -->
+    <script src="./assets/js/sidefiltertoggle.js"></script>
 </body>
 </html>
