@@ -788,9 +788,6 @@ nav {
 /* Small mobile (max-width: 430px) */
 @media (max-width: 430px) {
   /* Navigation adjustments for very small screens */
-  .sticky {
-    position: static;
-  }
   nav {
     padding: 10px;
   }
