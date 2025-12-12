@@ -42,7 +42,7 @@
 }
 
 .layout-switch {
-  width: 25%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 .sort-options {
   border-left: 1px solid #7d7d7d63;
@@ -81,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 15%;
 }
 .fliter-btn {
   border-left: 1px solid #7d7d7d63;
@@ -223,6 +224,9 @@
 .clear-filters:hover {
   background: white;
 }
+.card-link {
+  text-decoration: none;
+}
 /* Products Grid */
 .products-grid {
   padding: 20px 20px 20px 0;
@@ -251,8 +255,32 @@
   border-radius: 0 10px 10px 0;
   z-index: 2;
 }
+.add-to-cart {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-color: #fef3ea;
+  padding: 6px 8px;
+  border-right: 1px solid #7d7d7d37;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.add-to-cart:hover {
+  background-color: #fac6ae;
+  color: black;
+  transform: scale(1.1);
+}
+
 .product-image {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 .product-image img {
@@ -288,22 +316,6 @@
   font-weight: 700;
   color: black;
 }
-.add-to-cart {
-  width: 100%;
-  padding: 12px;
-  color: black;
-  background-color: #fac6ae;
-  border: none;
-  border-radius: 1px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.add-to-cart:hover {
-  color: white;
-  background-color: #f2a68c;
-}
 @media (max-width: 768px) {
   .filter-bar .product-count {
     display: none;
@@ -313,11 +325,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 15%;
   }
 
   .sort-options {
     border: 0;
-    width: 50%;
+    width: 70%;
   }
   .products-grid {
     gap: 20px;
@@ -361,13 +374,24 @@
 
 @media (max-width: 430px) {
   .products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
   }
   .view-details-btn i {
     font-size: 16px;
   }
   .layout-switch i:first-child {
     display: none;
+  }
+  .layout-switch {
+    width: 30%;
+  }
+  .sort-options {
+    width: 40%;
+  }
+  .fliter-btn {
+    width: 30%;
   }
   .sidebar {
     padding-bottom: 60px;
