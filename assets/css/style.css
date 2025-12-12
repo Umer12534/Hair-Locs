@@ -745,15 +745,17 @@ nav {
 
   /* Footer adjustments */
   .footer-logo {
-    height: 90px;
+    height: 100px;
   }
 
   .footer-card ul h3 {
     font-size: 1rem;
+    font-weight: 900;
   }
 
   .footer-card ul li {
     font-size: 12px;
+    font-weight: 500;
   }
 
   .footer-bottom .subscribe-section {
@@ -862,6 +864,11 @@ nav {
 
   .subscribe-section input {
     font-size: small;
+  }
+
+  .footer-logo {
+    height: 110px;
+    margin-top: 15px;
   }
 
   .whatsapp-ione {
