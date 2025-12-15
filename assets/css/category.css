@@ -1,3 +1,27 @@
+.page-header {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/All-products\ .jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.3rem;
+}
 /* Categories Filter Section */
 .categories-filter {
   padding-top: 20px;
@@ -6,10 +30,11 @@
 
 .filter-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 15px;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  padding: 0 25px 0 25px;
 }
 
 .filter-search {
@@ -41,13 +66,18 @@
 
 .filter-tags {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 12px;
 }
 
 .filter-tag {
-  padding: 10px 20px;
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #fff;
   border: 2px solid #fac6ae;
   border-radius: 25px;
@@ -201,7 +231,7 @@
 }
 
 .category-info {
-  padding: 25px;
+  padding: 25px 5px 25px 5px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -214,11 +244,14 @@
 .category-stats {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
   text-align: center;
   margin-top: 20px;
 }
-
+.product-count {
+  text-align: start;
+}
 .category-stats .category-btn {
   text-decoration: none;
   color: black;
@@ -236,6 +269,7 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
 /* small desktops */
 @media (min-width: 1200px) {
   .category-stats .category-btn {
@@ -249,11 +283,27 @@
   }
 }
 @media (max-width: 430px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  .page-header p {
+    font-size: 1rem;
+  }
   .category-card .product-info {
     padding: 20px 0;
   }
 }
-
+@media (max-width: 320px) {
+  .category-stats {
+    flex-wrap: wrap;
+  }
+  .product-count {
+    width: 100%;
+  }
+  .category-stats .category-btn {
+    width: 100%;
+  }
+}
 /* Feature products */
 .feature-products {
   width: 100%;
