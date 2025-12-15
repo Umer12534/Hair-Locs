@@ -917,3 +917,7 @@ nav {
     font-size: 7px;
   }
 }
+
+.one-fr {
+  grid-template-columns: 1fr;
+}
