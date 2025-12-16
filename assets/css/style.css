@@ -374,39 +374,38 @@ nav {
 /* Checkout button */
 .checkout-btn {
   margin-top: auto;
-  height: 70px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: #fef3ea;
+  padding: 5px;
+  border-top: 1px solid #979797;
 }
 
 .checkout-btn a {
   text-decoration: none;
   color: #000;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   width: 80%;
-  height: 100%;
   background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   background-size: 0% 100%;
   background-position: left;
   background-repeat: no-repeat;
   border: 2px solid #fac6ae;
   background-color: #fac6ae;
-  border-top: 1px solid #979797;
+  border-radius: 10px;
   transition: all 0.4s ease;
 }
 .checkout-btn p {
-  width: 20%;
-  height: 100%;
-  border-top: 1px solid #979797;
-  border-left: 1px solid #979797;
-  background-color: #fef3ea;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
   font-size: 15px;
+  margin-bottom: 5px;
 }
 
 .checkout-btn a:hover {
