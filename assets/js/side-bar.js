@@ -11,3 +11,17 @@ function togglenav() {
 
   navtabs.classList.toggle("active");
 }
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop === 0) {
+    // user is at the top
+    backToTop.classList.remove("active");
+  } else {
+    // user is not at the top
+    backToTop.classList.add("active");
+  }
+});

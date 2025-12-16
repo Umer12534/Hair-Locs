@@ -241,7 +241,10 @@ nav {
 .mobile-bottom-nav .nav-item i {
   font-size: 20px;
 }
-
+.mobile-bottom-nav .nav-item .fa-whatsapp {
+  font-weight: bolder;
+  font-size: x-large;
+}
 .mobile-bottom-nav .nav-item:hover {
   color: #d6336c;
 }
@@ -616,15 +619,15 @@ nav {
 }
 .to-top-icon {
   position: fixed;
-  bottom: 65px;
-  right: 10px;
-  height: 50px;
-  width: 50px;
-  background-color: #f6c7b645;
+  bottom: 70px;
+  right: 8px;
+  height: 40px;
+  width: 40px;
+  background-color: #f6c7b682;
   color: black;
   border-radius: 50%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   display: flex;
   text-decoration: none;
@@ -899,7 +902,7 @@ nav {
   .whatsapp-ione {
     display: none;
   }
-  .to-top-icon {
+  .to-top-icon.active {
     display: flex;
   }
 
