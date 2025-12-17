@@ -12,8 +12,8 @@ function togglenav() {
   navtabs.classList.toggle("active");
 }
 
+// JavaScript function for back to top button
 const backToTop = document.getElementById("backToTop");
-
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -23,5 +23,19 @@ window.addEventListener("scroll", () => {
   } else {
     // user is not at the top
     backToTop.classList.add("active");
+  }
+});
+
+const whatsappIcon = document.getElementById("whatsappIcon");
+const footer = document.getElementById("footer");
+window.addEventListener("scroll", () => {
+  const footerRect = footer.getBoundingClientRect();
+
+  if (footerRect.top < window.innerHeight) {
+    // user is at the top
+    whatsappIcon.classList.add("display-none");
+  } else {
+    // user is not at the top
+    whatsappIcon.classList.remove("display-none");
   }
 });
