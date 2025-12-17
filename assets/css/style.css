@@ -402,13 +402,24 @@ nav {
   border-radius: 10px;
   transition: all 0.4s ease;
 }
-.checkout-btn p {
-  width: 100%;
+.checkout-btn .cart-des {
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+}
+.checkout-btn .cart-des p:last-child {
+  font-size: 12px;
+}
+.checkout-btn p {
+  width: 80%;
+  display: flex;
+  justify-content: start;
   gap: 10px;
   font-size: 15px;
   margin-bottom: 5px;
+  text-decoration: underline;
 }
 
 .checkout-btn a:hover {
