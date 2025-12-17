@@ -2,7 +2,9 @@
 function toggleCart() {
   const cartSidebar = document.getElementById("cartSidebar");
   const cartOverlay = document.getElementById("cartOverlay");
+  const body = document.body;
 
+  body.classList.toggle("active");
   cartSidebar.classList.toggle("active");
   cartOverlay.classList.toggle("active"); // Fixed typo: was "actice"
 }

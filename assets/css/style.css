@@ -29,6 +29,9 @@ body {
   min-height: 100%;
   scroll-behavior: smooth;
 }
+body.active {
+  overflow: hidden;
+}
 
 .cart-overlay {
   position: fixed;
