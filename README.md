@@ -2,7 +2,6 @@
 
 ![TheHairLocs](https://img.shields.io/badge/TheHairLocs-Natural%20Hair%20Care-green?style=for-the-badge)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
 ---
 
