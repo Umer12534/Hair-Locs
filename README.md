@@ -123,8 +123,8 @@ Hair-Locs/
 | | Details |
 |---|---|
 | **Location** | Gujrat, Punjab, Pakistan |
-| **Phone** | 0333-3333333 |
-| **Email** | hairlocs@gmail.com |
+| **Phone** | 0327-6317391 |
+| **Email** | syedumer12534@gmail.com |
 | **Business Hours** | Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed |
 
 ### 🌐 Social Media
